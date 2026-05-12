@@ -58,7 +58,7 @@ export default function Home() {
       </section>
 
       <section className="bg-gradient-to-b from-white to-stone-100 px-5 py-6 sm:px-8 lg:px-10">
-        <div className="mx-auto max-w-6xl">
+        <div className="mx-auto max-w-5xl">
           <header className="flex flex-col gap-2 border-b border-zinc-200 pb-5 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <p className="text-3xl font-black tracking-tight text-zinc-950">
@@ -73,7 +73,7 @@ export default function Home() {
             </p>
           </header>
 
-          <div className="grid gap-8 py-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:py-10">
+          <div className="grid gap-8 py-8 lg:grid-cols-[1fr_0.75fr] lg:items-center lg:gap-5 lg:py-10">
             <div>
               <p className="mb-5 inline-flex rounded-full border border-orange-200 bg-orange-50 px-4 py-2 text-sm font-black text-orange-700">
                 Serving Citrus County and surrounding areas.
@@ -113,30 +113,31 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="grid justify-items-center gap-4 lg:justify-items-end">
+            <div className="grid justify-items-center gap-4 lg:justify-items-start">
               <Image
                 alt="ABC Work dumpster loading services"
-                className="h-auto max-h-[420px] w-auto max-w-full rounded-lg shadow-xl shadow-zinc-200"
+                className="h-auto max-h-[560px] w-auto max-w-full rounded-lg shadow-xl shadow-zinc-200"
                 height={1270}
                 priority
                 sizes="(min-width: 1024px) 420px, 100vw"
                 src="/images/dumpster-loading.jpg"
                 width={906}
               />
-              <div className="grid gap-4 sm:grid-cols-2">
-                <div className="rounded-lg border border-zinc-200 bg-white p-5 shadow-sm">
-                  <p className="text-sm font-black text-zinc-950">Dumpster rentals</p>
-                  <p className="mt-2 text-sm leading-6 text-zinc-600">
-                    For remodels, cleanouts, brush, junk, and debris.
-                  </p>
-                </div>
-                <div className="rounded-lg border border-zinc-200 bg-white p-5 shadow-sm">
-                  <p className="text-sm font-black text-zinc-950">Stump grinding</p>
-                  <p className="mt-2 text-sm leading-6 text-zinc-600">
-                    Clear stumps cleanly so yards and access areas open back up.
-                  </p>
-                </div>
-              </div>
+            </div>
+          </div>
+
+          <div className="grid gap-4 pb-8 sm:grid-cols-2 lg:pb-10">
+            <div className="rounded-lg border border-zinc-200 bg-white p-5 shadow-sm">
+              <p className="text-sm font-black text-zinc-950">Dumpster rentals</p>
+              <p className="mt-2 text-sm leading-6 text-zinc-600">
+                For remodels, cleanouts, brush, junk, and debris.
+              </p>
+            </div>
+            <div className="rounded-lg border border-zinc-200 bg-white p-5 shadow-sm">
+              <p className="text-sm font-black text-zinc-950">Stump grinding</p>
+              <p className="mt-2 text-sm leading-6 text-zinc-600">
+                Clear stumps cleanly so yards and access areas open back up.
+              </p>
             </div>
           </div>
         </div>
