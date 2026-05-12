@@ -1,10 +1,28 @@
 const services = [
-  "Dumpster rentals",
-  "Stump grinding",
-  "Junk removal",
-  "Property cleanouts",
-  "Brush removal",
-  "Debris hauling",
+  {
+    name: "Dumpster rentals",
+    detail: "Reliable dumpster options for cleanouts, remodels, debris, and job sites.",
+  },
+  {
+    name: "Stump grinding",
+    detail: "Professional stump grinding to open up yards, driveways, and work areas.",
+  },
+  {
+    name: "Junk removal",
+    detail: "Furniture, clutter, and unwanted items removed without the hassle.",
+  },
+  {
+    name: "Property cleanouts",
+    detail: "Help clearing garages, rentals, estates, and full properties.",
+  },
+  {
+    name: "Brush removal",
+    detail: "Branches, yard waste, storm debris, and overgrowth hauled away.",
+  },
+  {
+    name: "Debris removal",
+    detail: "Cleanup support for construction debris, brush, junk, and more.",
+  },
 ];
 
 const serviceAreas = [
@@ -20,132 +38,194 @@ const serviceAreas = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-zinc-950">
-      <section className="bg-zinc-950 text-white">
-        <div className="mx-auto flex w-full max-w-6xl flex-col gap-12 px-6 py-8 sm:px-8 lg:px-10">
-          <header className="flex flex-col gap-4 border-b border-white/10 pb-6 sm:flex-row sm:items-center sm:justify-between">
+    <main className="min-h-screen bg-stone-50 text-zinc-950">
+      <section className="bg-zinc-950 px-5 py-3 text-sm text-white sm:px-8 lg:px-10">
+        <div className="mx-auto flex max-w-6xl flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <p className="font-semibold text-zinc-200">
+            Licensed and insured local contractor
+          </p>
+          <div className="flex flex-col gap-1 font-semibold sm:flex-row sm:gap-5">
+            <a className="text-orange-400 hover:text-orange-300" href="tel:3524365635">
+              (352) 436-5635
+            </a>
+            <a className="text-zinc-200 hover:text-orange-300" href="mailto:abcwork74@gmail.com">
+              abcwork74@gmail.com
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-gradient-to-b from-white to-stone-100 px-5 py-6 sm:px-8 lg:px-10">
+        <div className="mx-auto max-w-6xl">
+          <header className="flex flex-col gap-2 border-b border-zinc-200 pb-5 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-orange-500">
-                Licensed and insured
-              </p>
-              <p className="mt-2 text-2xl font-black tracking-tight">
+              <p className="text-3xl font-black tracking-tight text-zinc-950">
                 ABC Work
               </p>
+              <p className="mt-1 text-sm font-semibold text-zinc-600">
+                Dumpster rentals, stump grinding, junk removal, and cleanouts
+              </p>
             </div>
-            <div className="text-sm text-zinc-300 sm:text-right">
-              <a className="block font-semibold text-white" href="tel:3524365635">
-                (352) 436-5635
-              </a>
-              <a className="block hover:text-orange-400" href="mailto:abcwork74@gmail.com">
-                abcwork74@gmail.com
-              </a>
-            </div>
+            <p className="text-sm font-bold uppercase tracking-[0.16em] text-orange-600">
+              Citrus County, FL
+            </p>
           </header>
 
-          <div className="grid gap-10 pb-12 pt-2 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+          <div className="grid gap-10 py-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:py-16">
             <div>
-              <p className="mb-4 inline-flex rounded-full bg-orange-500 px-4 py-2 text-sm font-bold text-zinc-950">
-                Serving Citrus County, Florida
+              <p className="mb-5 inline-flex rounded-full border border-orange-200 bg-orange-50 px-4 py-2 text-sm font-black text-orange-700">
+                Serving Citrus County and surrounding areas.
               </p>
-              <h1 className="max-w-3xl text-4xl font-black leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-                Reliable dumpster rentals, cleanouts, and debris removal.
+              <h1 className="max-w-3xl text-4xl font-black leading-tight tracking-tight text-zinc-950 sm:text-5xl lg:text-6xl">
+                Reliable dumpsters, stump grinding, and cleanup services.
               </h1>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-300">
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-700">
                 ABC Work helps homeowners, contractors, and property managers
-                clear the mess with professional hauling, stump grinding, junk
-                removal, and site cleanup services.
+                clear space with dependable dumpster rentals, professional stump
+                grinding, junk removal, cleanouts, and debris removal.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <a
-                  className="inline-flex min-h-14 items-center justify-center rounded-md bg-orange-500 px-7 text-base font-black text-zinc-950 shadow-lg shadow-orange-950/30 transition hover:bg-orange-400"
+                  className="inline-flex min-h-14 items-center justify-center rounded-md bg-orange-500 px-8 text-base font-black text-zinc-950 shadow-lg shadow-orange-200 transition hover:bg-orange-400"
                   href="tel:3524365635"
                 >
                   Call Now
                 </a>
                 <a
-                  className="inline-flex min-h-14 items-center justify-center rounded-md border border-white/30 px-7 text-base font-bold text-white transition hover:border-orange-400 hover:text-orange-400"
+                  className="inline-flex min-h-14 items-center justify-center rounded-md border border-zinc-900 bg-zinc-950 px-8 text-base font-bold text-white transition hover:bg-zinc-800"
                   href="#quote"
                 >
                   Request a Free Quote
                 </a>
               </div>
+              <div className="mt-8 grid gap-3 text-sm font-bold text-zinc-700 sm:grid-cols-3">
+                <p className="rounded-md border border-zinc-200 bg-white p-4 shadow-sm">
+                  Fast local response
+                </p>
+                <p className="rounded-md border border-zinc-200 bg-white p-4 shadow-sm">
+                  Licensed and insured
+                </p>
+                <p className="rounded-md border border-zinc-200 bg-white p-4 shadow-sm">
+                  Clear communication
+                </p>
+              </div>
             </div>
 
-            <div className="rounded-lg border border-white/10 bg-white p-6 text-zinc-950 shadow-2xl shadow-black/30">
-              <p className="text-sm font-bold uppercase tracking-[0.16em] text-orange-600">
-                Fast local service
-              </p>
-              <h2 className="mt-3 text-2xl font-black">Clean up made simple.</h2>
-              <div className="mt-6 grid gap-3 text-sm font-semibold text-zinc-700">
-                <div className="rounded-md bg-zinc-100 p-4">Dumpster rentals for projects big and small</div>
-                <div className="rounded-md bg-zinc-100 p-4">Junk, brush, and debris hauled away</div>
-                <div className="rounded-md bg-zinc-100 p-4">Clear pricing and dependable scheduling</div>
+            <div className="grid gap-4">
+              <div className="aspect-[4/3] rounded-lg border border-zinc-200 bg-white p-4 shadow-xl shadow-zinc-200">
+                <div className="flex h-full flex-col justify-between rounded-md border border-zinc-200 bg-gradient-to-br from-zinc-100 via-white to-orange-100 p-5">
+                  <p className="w-fit rounded-full bg-white px-3 py-1 text-xs font-black uppercase tracking-[0.14em] text-orange-700 shadow-sm">
+                    Photo placeholder
+                  </p>
+                  <div>
+                    <p className="text-2xl font-black text-zinc-950">
+                      Local cleanup and equipment service
+                    </p>
+                    <p className="mt-2 max-w-sm text-sm font-semibold leading-6 text-zinc-700">
+                      Add real dumpster, stump grinding, and cleanout photos
+                      here later.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="grid gap-4 sm:grid-cols-2">
+                <div className="rounded-lg border border-zinc-200 bg-white p-5 shadow-sm">
+                  <p className="text-sm font-black text-zinc-950">Dumpster rentals</p>
+                  <p className="mt-2 text-sm leading-6 text-zinc-600">
+                    For remodels, cleanouts, brush, junk, and debris.
+                  </p>
+                </div>
+                <div className="rounded-lg border border-zinc-200 bg-white p-5 shadow-sm">
+                  <p className="text-sm font-black text-zinc-950">Stump grinding</p>
+                  <p className="mt-2 text-sm leading-6 text-zinc-600">
+                    Clear stumps cleanly so yards and access areas open back up.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="bg-zinc-100 px-6 py-16 sm:px-8 lg:px-10">
+      <section className="bg-white px-5 py-16 sm:px-8 lg:px-10">
         <div className="mx-auto max-w-6xl">
-          <p className="text-sm font-bold uppercase tracking-[0.16em] text-orange-600">
-            Services
-          </p>
-          <h2 className="mt-3 text-3xl font-black tracking-tight text-zinc-950">
-            Practical help for tough cleanup jobs.
-          </h2>
+          <div className="max-w-2xl">
+            <p className="text-sm font-black uppercase tracking-[0.16em] text-orange-600">
+              Services
+            </p>
+            <h2 className="mt-3 text-3xl font-black tracking-tight text-zinc-950">
+              Practical help for tough cleanup and property projects.
+            </h2>
+          </div>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => (
               <div
-                className="rounded-lg border border-zinc-200 bg-white p-5 shadow-sm"
-                key={service}
+                className="rounded-lg border border-zinc-200 bg-stone-50 p-5 transition hover:border-orange-300 hover:bg-white hover:shadow-md"
+                key={service.name}
               >
-                <div className="mb-4 h-1.5 w-12 rounded-full bg-orange-500" />
-                <h3 className="text-lg font-black">{service}</h3>
+                <div className="mb-5 h-1.5 w-12 rounded-full bg-orange-500" />
+                <h3 className="text-lg font-black">{service.name}</h3>
+                <p className="mt-3 text-sm leading-6 text-zinc-600">
+                  {service.detail}
+                </p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="px-6 py-16 sm:px-8 lg:px-10">
-        <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2 lg:items-start">
+      <section className="bg-stone-50 px-5 py-16 sm:px-8 lg:px-10">
+        <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <div>
-            <p className="text-sm font-bold uppercase tracking-[0.16em] text-orange-600">
+            <p className="text-sm font-black uppercase tracking-[0.16em] text-orange-600">
               Why choose ABC Work
             </p>
             <h2 className="mt-3 text-3xl font-black tracking-tight">
-              A local crew you can count on.
+              A local crew you can trust on your property.
             </h2>
+            <div className="mt-6 aspect-[5/3] rounded-lg border border-zinc-200 bg-white p-4 shadow-sm">
+              <div className="flex h-full items-end rounded-md bg-gradient-to-br from-zinc-200 via-zinc-100 to-orange-100 p-5">
+                <p className="rounded-full bg-white px-3 py-1 text-xs font-black uppercase tracking-[0.14em] text-zinc-700 shadow-sm">
+                  Photo placeholder
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="grid gap-5">
+          <div className="grid gap-4">
             {[
-              "Licensed and insured for your peace of mind.",
-              "Professional, responsive service from quote to cleanup.",
-              "Built for local homes, job sites, rentals, and properties.",
-              "Straightforward communication and reliable follow-through.",
+              "Licensed and insured for peace of mind on every job.",
+              "Responsive scheduling and straightforward communication.",
+              "Ready for homes, rentals, job sites, and rural properties.",
+              "Dependable cleanup from the first call to the final haul.",
             ].map((reason) => (
-              <div className="flex gap-4" key={reason}>
-                <span className="mt-1 h-5 w-5 flex-none rounded-full bg-orange-500" />
-                <p className="text-lg leading-8 text-zinc-700">{reason}</p>
+              <div
+                className="rounded-lg border border-zinc-200 bg-white p-5 shadow-sm"
+                key={reason}
+              >
+                <div className="flex gap-4">
+                  <span className="mt-1 h-5 w-5 flex-none rounded-full border-4 border-orange-200 bg-orange-500" />
+                  <p className="text-base font-semibold leading-7 text-zinc-700">
+                    {reason}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-zinc-950 px-6 py-16 text-white sm:px-8 lg:px-10">
-        <div className="mx-auto max-w-6xl">
-          <p className="text-sm font-bold uppercase tracking-[0.16em] text-orange-500">
+      <section className="px-5 py-16 sm:px-8 lg:px-10">
+        <div className="mx-auto max-w-6xl rounded-lg border border-zinc-800 bg-zinc-950 p-6 text-white shadow-lg shadow-zinc-200 sm:p-8 lg:p-10">
+          <p className="text-sm font-black uppercase tracking-[0.16em] text-orange-400">
             Service areas
           </p>
           <h2 className="mt-3 text-3xl font-black tracking-tight">
-            Serving Citrus County and nearby communities.
+            Serving Citrus County and surrounding areas.
           </h2>
           <div className="mt-8 flex flex-wrap gap-3">
             {serviceAreas.map((area) => (
               <span
-                className="rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-semibold text-zinc-200"
+                className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-semibold text-zinc-100"
                 key={area}
               >
                 {area}
@@ -155,51 +235,58 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="quote" className="bg-zinc-100 px-6 py-16 sm:px-8 lg:px-10">
+      <section id="quote" className="bg-stone-50 px-5 py-16 sm:px-8 lg:px-10">
         <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[0.85fr_1.15fr]">
           <div>
-            <p className="text-sm font-bold uppercase tracking-[0.16em] text-orange-600">
+            <p className="text-sm font-black uppercase tracking-[0.16em] text-orange-600">
               Free quote
             </p>
             <h2 className="mt-3 text-3xl font-black tracking-tight">
-              Tell us what needs to go.
+              Tell us what needs to be cleared.
             </h2>
             <p className="mt-5 leading-8 text-zinc-700">
               Call for the fastest response, or send the basic details and ABC
-              Work will follow up about scheduling and pricing.
+              Work will follow up about scheduling, pricing, and the right
+              service for the job.
             </p>
-            <div className="mt-6 rounded-lg bg-zinc-950 p-5 text-white">
-              <p className="font-black">ABC Work</p>
-              <a className="mt-3 block text-orange-400" href="tel:3524365635">
+            <div className="mt-6 rounded-lg border border-zinc-200 bg-white p-5 shadow-sm">
+              <p className="font-black text-zinc-950">ABC Work</p>
+              <p className="mt-1 text-sm font-semibold text-zinc-600">
+                Licensed and insured
+              </p>
+              <a className="mt-4 block text-lg font-black text-orange-600" href="tel:3524365635">
                 (352) 436-5635
               </a>
-              <a className="mt-1 block text-zinc-300" href="mailto:abcwork74@gmail.com">
+              <a className="mt-1 block font-semibold text-zinc-700" href="mailto:abcwork74@gmail.com">
                 abcwork74@gmail.com
               </a>
             </div>
           </div>
 
-          <form className="grid gap-4 rounded-lg border border-zinc-200 bg-white p-6 shadow-sm">
+          <form className="grid gap-4 rounded-lg border border-zinc-200 bg-white p-5 shadow-lg shadow-zinc-200 sm:p-6">
             <div className="grid gap-4 sm:grid-cols-2">
               <label className="grid gap-2 text-sm font-bold text-zinc-800">
                 Name
-                <input className="min-h-12 rounded-md border border-zinc-300 px-4 font-normal outline-none focus:border-orange-500" />
+                <input className="min-h-12 rounded-md border border-zinc-300 bg-white px-4 font-normal outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-100" />
               </label>
               <label className="grid gap-2 text-sm font-bold text-zinc-800">
                 Phone
-                <input className="min-h-12 rounded-md border border-zinc-300 px-4 font-normal outline-none focus:border-orange-500" />
+                <input className="min-h-12 rounded-md border border-zinc-300 bg-white px-4 font-normal outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-100" />
               </label>
             </div>
             <label className="grid gap-2 text-sm font-bold text-zinc-800">
               Service needed
-              <input className="min-h-12 rounded-md border border-zinc-300 px-4 font-normal outline-none focus:border-orange-500" />
+              <input
+                className="min-h-12 rounded-md border border-zinc-300 bg-white px-4 font-normal outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-100"
+                placeholder="Dumpster rental, stump grinding, or cleanup"
+              />
             </label>
             <label className="grid gap-2 text-sm font-bold text-zinc-800">
               Project details
-              <textarea className="min-h-32 rounded-md border border-zinc-300 px-4 py-3 font-normal outline-none focus:border-orange-500" />
+              <textarea className="min-h-32 rounded-md border border-zinc-300 bg-white px-4 py-3 font-normal outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-100" />
             </label>
             <button
-              className="min-h-13 rounded-md bg-orange-500 px-6 text-base font-black text-zinc-950 transition hover:bg-orange-400"
+              className="min-h-14 rounded-md bg-orange-500 px-6 text-base font-black text-zinc-950 shadow-md shadow-orange-100 transition hover:bg-orange-400"
               type="button"
             >
               Request a Free Quote
@@ -208,11 +295,11 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="bg-zinc-950 px-6 py-8 text-sm text-zinc-400 sm:px-8 lg:px-10">
+      <footer className="border-t border-zinc-200 bg-white px-5 py-8 text-sm text-zinc-600 sm:px-8 lg:px-10">
         <div className="mx-auto flex max-w-6xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-          <p className="font-semibold text-white">ABC Work</p>
+          <p className="text-lg font-black text-zinc-950">ABC Work</p>
           <p>Dumpster rentals, stump grinding, junk removal, cleanouts, brush and debris removal.</p>
-          <p>Licensed and insured</p>
+          <p className="font-semibold text-zinc-950">Licensed and insured</p>
         </div>
       </footer>
     </main>
