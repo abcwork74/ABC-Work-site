@@ -103,7 +103,7 @@ export default function Home() {
             </p>
           </header>
 
-          <div className="grid gap-8 py-8 lg:grid-cols-[1fr_0.75fr] lg:items-center lg:gap-5 lg:py-10">
+          <div className="relative grid gap-8 py-8 lg:grid-cols-[1fr_0.75fr] lg:items-center lg:gap-5 lg:py-10">
             <div>
               <p className="mb-5 inline-flex rounded-full border border-orange-200 bg-orange-50 px-4 py-2 text-sm font-black text-orange-700">
                 Serving Citrus County and surrounding areas.
@@ -143,13 +143,13 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="grid justify-items-center gap-4 lg:justify-items-start">
+            <div className="pointer-events-none absolute right-8 top-8 hidden lg:block xl:right-10">
               <Image
                 alt="ABC Work dumpster loading services"
-                className="h-auto max-h-[680px] w-auto max-w-full rounded-lg shadow-xl shadow-zinc-200"
+                className="h-[410px] w-auto max-w-full rounded-lg shadow-xl shadow-zinc-200 xl:h-[440px]"
                 height={1270}
                 priority
-                sizes="(min-width: 1024px) 520px, 100vw"
+                sizes="(min-width: 1280px) 278px, (min-width: 1024px) 257px, 100vw"
                 src="/images/dumpster-loading.jpg"
                 width={906}
               />
