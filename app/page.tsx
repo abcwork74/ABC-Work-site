@@ -42,11 +42,11 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-stone-50 text-zinc-950 max-sm:pb-24">
       <section className="bg-zinc-950 px-5 py-3 text-sm text-white max-sm:px-4 max-sm:py-2 max-sm:text-[0.95rem] sm:px-8 lg:px-10">
-        <div className="mx-auto flex max-w-6xl flex-col gap-2 max-sm:gap-0.5 sm:flex-row sm:items-center sm:justify-between">
-          <p className="font-semibold text-zinc-200">
+        <div className="mx-auto flex max-w-6xl flex-col gap-2 max-sm:gap-1 sm:flex-row sm:items-center sm:justify-between">
+          <p className="font-semibold leading-snug text-zinc-200">
             Licensed and insured local contractor
           </p>
-          <div className="flex flex-col gap-1 font-semibold max-sm:gap-0 sm:flex-row sm:gap-5">
+          <div className="flex flex-col gap-1 font-semibold leading-snug max-sm:gap-0.5 sm:flex-row sm:gap-5">
             <a className="text-orange-400 hover:text-orange-300" href="tel:3524365635">
               (352) 436-5635
             </a>
@@ -105,25 +105,25 @@ export default function Home() {
 
           <div className="relative grid gap-8 py-8 max-sm:py-3 lg:grid-cols-[1fr_0.75fr] lg:items-center lg:gap-5 lg:py-10">
             <div>
-              <p className="mb-5 inline-flex rounded-full border border-orange-200 bg-orange-50 px-4 py-2 text-sm font-black text-orange-700 max-sm:mb-1.5 max-sm:px-3 max-sm:py-1.5">
+              <p className="mb-5 inline-flex items-center rounded-full border border-orange-300/70 bg-orange-50 px-4 py-2 text-sm font-black text-orange-700 shadow-sm shadow-orange-100 max-sm:mb-2 max-sm:px-3.5 max-sm:py-1.5">
                 Serving Citrus County and surrounding areas.
               </p>
-              <div className="relative mb-2.5 aspect-[16/9] overflow-hidden rounded-lg shadow-lg shadow-zinc-200 sm:hidden">
+              <div className="relative mb-3.5 aspect-[16/9] overflow-hidden rounded-lg shadow-xl shadow-zinc-300/70 transition-transform duration-200 active:scale-[0.99] sm:hidden">
                 <Image
                   alt="ABC Work dumpster rental truck and trailer"
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-cover contrast-105 saturate-110"
                   height={850}
                   priority
                   sizes="100vw"
                   src="/images/448005019_430208936517255_3916163214568262560_n.jpg"
                   width={850}
                 />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-black/10" />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-black/5 to-black/10" />
               </div>
-              <h1 className="max-w-3xl text-4xl font-black leading-tight tracking-tight text-zinc-950 max-sm:text-[2.25rem] sm:text-5xl lg:text-5xl">
+              <h1 className="max-w-3xl text-4xl font-black leading-tight tracking-tight text-zinc-950 max-sm:text-[2.05rem] max-sm:leading-[1.04] max-sm:tracking-normal sm:text-5xl lg:text-5xl">
                 Reliable dumpsters, stump grinding, and cleanup services.
               </h1>
-              <p className="mt-5 max-w-2xl text-lg leading-8 text-zinc-700 max-sm:mt-1.5 max-sm:text-[1.05rem] max-sm:leading-7">
+              <p className="mt-5 max-w-2xl text-lg leading-8 text-zinc-700 max-sm:mt-2.5 max-sm:text-[1.05rem] max-sm:leading-[1.68] max-sm:text-zinc-800">
                 ABC Work helps homeowners, contractors, and property managers
                 clear space with dependable dumpster rentals, professional stump
                 grinding, junk removal, cleanouts, and debris removal.
@@ -143,13 +143,13 @@ export default function Home() {
                 </a>
               </div>
               <div className="mt-8 grid gap-3 text-sm font-bold text-zinc-700 max-sm:mt-4 sm:grid-cols-3">
-                <p className="rounded-md border border-zinc-200 bg-white p-4 shadow-sm">
+                <p className="rounded-md border border-zinc-200 bg-white p-4 shadow-sm max-sm:border-zinc-100 max-sm:shadow-md max-sm:shadow-zinc-200/70">
                   Fast local response
                 </p>
-                <p className="rounded-md border border-zinc-200 bg-white p-4 shadow-sm">
+                <p className="rounded-md border border-zinc-200 bg-white p-4 shadow-sm max-sm:border-zinc-100 max-sm:shadow-md max-sm:shadow-zinc-200/70">
                   Licensed and insured
                 </p>
-                <p className="rounded-md border border-zinc-200 bg-white p-4 shadow-sm">
+                <p className="rounded-md border border-zinc-200 bg-white p-4 shadow-sm max-sm:border-zinc-100 max-sm:shadow-md max-sm:shadow-zinc-200/70">
                   Clear communication
                 </p>
               </div>
@@ -198,7 +198,7 @@ export default function Home() {
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => (
               <div
-                className="rounded-lg border border-zinc-200 bg-stone-50 p-5 transition hover:border-orange-300 hover:bg-white hover:shadow-md"
+                className="rounded-lg border border-zinc-200 bg-stone-50 p-5 transition hover:border-orange-300 hover:bg-white hover:shadow-md max-sm:border-zinc-100 max-sm:p-6 max-sm:shadow-lg max-sm:shadow-zinc-200/60"
                 key={service.name}
               >
                 {service.name === "Dumpster rentals" ? (
