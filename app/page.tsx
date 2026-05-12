@@ -40,13 +40,13 @@ const serviceAreas = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-stone-50 text-zinc-950">
-      <section className="bg-zinc-950 px-5 py-3 text-sm text-white sm:px-8 lg:px-10">
-        <div className="mx-auto flex max-w-6xl flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+    <main className="min-h-screen bg-stone-50 text-zinc-950 max-sm:pb-24">
+      <section className="bg-zinc-950 px-5 py-3 text-sm text-white max-sm:px-4 max-sm:py-2 max-sm:text-[0.95rem] sm:px-8 lg:px-10">
+        <div className="mx-auto flex max-w-6xl flex-col gap-2 max-sm:gap-0.5 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-semibold text-zinc-200">
             Licensed and insured local contractor
           </p>
-          <div className="flex flex-col gap-1 font-semibold sm:flex-row sm:gap-5">
+          <div className="flex flex-col gap-1 font-semibold max-sm:gap-0 sm:flex-row sm:gap-5">
             <a className="text-orange-400 hover:text-orange-300" href="tel:3524365635">
               (352) 436-5635
             </a>
@@ -88,35 +88,47 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <div className="relative z-10 mx-auto min-h-full max-w-5xl bg-gradient-to-b from-white to-stone-100 px-4 py-6 sm:px-6 lg:px-8">
-          <header className="flex flex-col gap-2 border-b border-zinc-200 pb-5 sm:flex-row sm:items-end sm:justify-between">
+        <div className="relative z-10 mx-auto min-h-full max-w-5xl bg-gradient-to-b from-white to-stone-100 px-4 py-6 max-sm:py-3 sm:px-6 lg:px-8">
+          <header className="flex flex-col gap-2 border-b border-zinc-200 pb-5 max-sm:gap-0.5 max-sm:pb-2 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <p className="text-3xl font-black tracking-tight text-zinc-950">
+              <p className="text-3xl font-black tracking-tight text-zinc-950 max-sm:text-2xl">
                 ABC Work
               </p>
-              <p className="mt-1 text-sm font-semibold text-zinc-600">
+              <p className="mt-1 text-sm font-semibold text-zinc-600 max-sm:mt-0.5 max-sm:leading-tight">
                 Dumpster rentals, stump grinding, junk removal, and cleanouts
               </p>
             </div>
-            <p className="text-sm font-bold uppercase tracking-[0.16em] text-orange-600">
+            <p className="text-sm font-bold uppercase tracking-[0.16em] text-orange-600 max-sm:text-xs">
               Citrus County, FL
             </p>
           </header>
 
-          <div className="relative grid gap-8 py-8 lg:grid-cols-[1fr_0.75fr] lg:items-center lg:gap-5 lg:py-10">
+          <div className="relative grid gap-8 py-8 max-sm:py-3 lg:grid-cols-[1fr_0.75fr] lg:items-center lg:gap-5 lg:py-10">
             <div>
-              <p className="mb-5 inline-flex rounded-full border border-orange-200 bg-orange-50 px-4 py-2 text-sm font-black text-orange-700">
+              <p className="mb-5 inline-flex rounded-full border border-orange-200 bg-orange-50 px-4 py-2 text-sm font-black text-orange-700 max-sm:mb-1.5 max-sm:px-3 max-sm:py-1.5">
                 Serving Citrus County and surrounding areas.
               </p>
-              <h1 className="max-w-3xl text-4xl font-black leading-tight tracking-tight text-zinc-950 sm:text-5xl lg:text-5xl">
+              <div className="relative mb-2.5 aspect-[16/9] overflow-hidden rounded-lg shadow-lg shadow-zinc-200 sm:hidden">
+                <Image
+                  alt="ABC Work dumpster rental truck and trailer"
+                  className="h-full w-full object-cover"
+                  height={850}
+                  priority
+                  sizes="100vw"
+                  src="/images/448005019_430208936517255_3916163214568262560_n.jpg"
+                  width={850}
+                />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-black/10" />
+              </div>
+              <h1 className="max-w-3xl text-4xl font-black leading-tight tracking-tight text-zinc-950 max-sm:text-[2.25rem] sm:text-5xl lg:text-5xl">
                 Reliable dumpsters, stump grinding, and cleanup services.
               </h1>
-              <p className="mt-5 max-w-2xl text-lg leading-8 text-zinc-700">
+              <p className="mt-5 max-w-2xl text-lg leading-8 text-zinc-700 max-sm:mt-1.5 max-sm:text-[1.05rem] max-sm:leading-7">
                 ABC Work helps homeowners, contractors, and property managers
                 clear space with dependable dumpster rentals, professional stump
                 grinding, junk removal, cleanouts, and debris removal.
               </p>
-              <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+              <div className="mt-6 hidden flex-col gap-3 max-sm:mt-2.5 sm:flex sm:flex-row">
                 <a
                   className="inline-flex min-h-14 items-center justify-center rounded-md bg-orange-500 px-8 text-base font-black text-zinc-950 shadow-lg shadow-orange-200 transition hover:bg-orange-400"
                   href="tel:3524365635"
@@ -130,7 +142,7 @@ export default function Home() {
                   Request a Free Quote
                 </a>
               </div>
-              <div className="mt-8 grid gap-3 text-sm font-bold text-zinc-700 sm:grid-cols-3">
+              <div className="mt-8 grid gap-3 text-sm font-bold text-zinc-700 max-sm:mt-4 sm:grid-cols-3">
                 <p className="rounded-md border border-zinc-200 bg-white p-4 shadow-sm">
                   Fast local response
                 </p>
@@ -220,8 +232,8 @@ export default function Home() {
                   />
                 ) : null}
                 <div className="mb-5 h-1.5 w-12 rounded-full bg-orange-500" />
-                <h3 className="text-lg font-black">{service.name}</h3>
-                <p className="mt-3 text-sm leading-6 text-zinc-600">
+                <h3 className="text-lg font-black max-sm:text-xl">{service.name}</h3>
+                <p className="mt-3 text-sm leading-6 text-zinc-600 max-sm:text-base max-sm:leading-7">
                   {service.detail}
                 </p>
               </div>
@@ -359,6 +371,23 @@ export default function Home() {
           <p className="font-semibold text-zinc-950">Licensed and insured</p>
         </div>
       </footer>
+
+      <div className="fixed inset-x-0 bottom-0 z-50 border-t border-zinc-200 bg-white/95 px-4 pb-[calc(env(safe-area-inset-bottom)+0.75rem)] pt-3 shadow-2xl shadow-zinc-950/20 backdrop-blur sm:hidden">
+        <div className="mx-auto grid max-w-md grid-cols-2 gap-3">
+          <a
+            className="inline-flex min-h-12 items-center justify-center rounded-md bg-orange-500 px-4 text-sm font-black text-zinc-950 shadow-md shadow-orange-200"
+            href="tel:3524365635"
+          >
+            Call Now
+          </a>
+          <a
+            className="inline-flex min-h-12 items-center justify-center rounded-md bg-zinc-950 px-4 text-sm font-black text-white shadow-md shadow-zinc-300"
+            href="#quote"
+          >
+            Request Quote
+          </a>
+        </div>
+      </div>
     </main>
   );
 }
