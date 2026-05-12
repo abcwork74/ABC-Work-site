@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { FormEvent, useState } from "react";
 
 const services = [
   {
@@ -39,6 +42,32 @@ const serviceAreas = [
 ];
 
 export default function Home() {
+  const [quoteStatus, setQuoteStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
+
+  async function handleQuoteSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setQuoteStatus("sending");
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("/api/quote", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (!response.ok) {
+        throw new Error("Quote request failed");
+      }
+
+      form.reset();
+      setQuoteStatus("sent");
+    } catch {
+      setQuoteStatus("error");
+    }
+  }
+
   return (
     <main className="min-h-screen bg-stone-50 text-zinc-950 max-sm:pb-24">
       <section className="bg-zinc-950 px-5 py-3 text-sm text-white max-sm:px-4 max-sm:py-2 max-sm:text-[0.95rem] sm:px-8 lg:px-10">
@@ -63,10 +92,10 @@ export default function Home() {
           className="pointer-events-none absolute inset-y-0 left-0 z-0 hidden w-[16vw] flex-col gap-1 overflow-hidden opacity-45 brightness-75 xl:flex"
         >
           {[
+            "/images/571211473_795564596648352_6427307094381767261_n.jpg",
             "/images/stump-grinder.jpg",
-            "/images/480807077_608529052018575_8891667848226676131_n.jpg",
-            "/images/family-owned.jpg",
-            "/images/481995667_606737238864423_2537526134187271_n.jpg",
+            "/images/580140515_811754488362696_6753185236808792455_n.jpg",
+            "/images/stump-before-after.jpg",
           ].map((src) => (
             <div className="relative min-h-0 flex-1 bg-zinc-900" key={src}>
               <Image alt="" className="object-cover" fill src={src} />
@@ -78,10 +107,10 @@ export default function Home() {
           className="pointer-events-none absolute inset-y-0 right-0 z-0 hidden w-[16vw] flex-col gap-1 overflow-hidden opacity-45 brightness-75 xl:flex"
         >
           {[
+            "/images/575105195_803031602568318_982158897403736591_n.jpg",
+            "/images/448005019_430208936517255_3916163214568262560_n.jpg",
             "/images/481995667_606737238864423_2537526134187271_n.jpg",
-            "/images/dumpster-loading.jpg",
-            "/images/480807077_608529052018575_8891667848226676131_n.jpg",
-            "/images/stump-grinder.jpg",
+            "/images/509979007_693561786848634_8745613655660777534_n.jpg",
           ].map((src) => (
             <div className="relative min-h-0 flex-1 bg-zinc-900" key={src}>
               <Image alt="" className="object-cover" fill src={src} />
@@ -333,33 +362,49 @@ export default function Home() {
             </div>
           </div>
 
-          <form className="grid gap-4 rounded-xl border border-stone-200 bg-gradient-to-b from-white to-stone-50 p-5 shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_7px_0_rgba(146,64,14,0.18),0_24px_38px_rgba(120,113,108,0.22),0_5px_10px_rgba(120,113,108,0.15)] sm:p-6">
+          <form
+            className="grid gap-4 rounded-xl border border-stone-200 bg-gradient-to-b from-white to-stone-50 p-5 shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_7px_0_rgba(146,64,14,0.18),0_24px_38px_rgba(120,113,108,0.22),0_5px_10px_rgba(120,113,108,0.15)] sm:p-6"
+            onSubmit={handleQuoteSubmit}
+          >
             <div className="grid gap-4 sm:grid-cols-2">
               <label className="grid gap-2 text-sm font-bold text-zinc-800">
                 Name
-                <input className="min-h-12 rounded-md border border-zinc-300 bg-white px-4 font-normal outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-100" />
+                <input className="min-h-12 rounded-md border border-zinc-300 bg-white px-4 font-normal outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-100" name="name" required />
               </label>
               <label className="grid gap-2 text-sm font-bold text-zinc-800">
                 Phone
-                <input className="min-h-12 rounded-md border border-zinc-300 bg-white px-4 font-normal outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-100" />
+                <input className="min-h-12 rounded-md border border-zinc-300 bg-white px-4 font-normal outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-100" name="phone" required />
               </label>
             </div>
             <label className="grid gap-2 text-sm font-bold text-zinc-800">
               Service needed
               <input
                 className="min-h-12 rounded-md border border-zinc-300 bg-white px-4 font-normal outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-100"
+                name="service"
                 placeholder="Dumpster rental, stump grinding, grading, or tractor work"
+                required
               />
             </label>
             <label className="grid gap-2 text-sm font-bold text-zinc-800">
               Project details
-              <textarea className="min-h-32 rounded-md border border-zinc-300 bg-white px-4 py-3 font-normal outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-100" />
+              <textarea className="min-h-32 rounded-md border border-zinc-300 bg-white px-4 py-3 font-normal outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-100" name="details" required />
             </label>
+            {quoteStatus === "sent" ? (
+              <p className="font-semibold text-green-700">
+                Thanks — your quote request has been sent.
+              </p>
+            ) : null}
+            {quoteStatus === "error" ? (
+              <p className="font-semibold text-red-700">
+                Something went wrong. Please call or try again.
+              </p>
+            ) : null}
             <button
               className="min-h-14 rounded-lg border border-[#c94f0b]/80 bg-gradient-to-b from-[#f47c20] to-[#dd5f0b] px-6 text-base font-black text-zinc-950 shadow-[inset_0_1px_0_rgba(255,255,255,0.42),0_4px_0_rgba(171,63,10,0.72),0_13px_24px_rgba(39,39,42,0.17),0_3px_7px_rgba(63,63,70,0.13)] transition duration-150 ease-out hover:from-[#ff8a2a] hover:to-[#dd5f0b] active:translate-y-[3px] active:shadow-[inset_0_1px_0_rgba(255,255,255,0.26),0_1px_0_rgba(171,63,10,0.58),0_6px_12px_rgba(39,39,42,0.14)]"
-              type="button"
+              disabled={quoteStatus === "sending"}
+              type="submit"
             >
-              Request a Free Quote
+              {quoteStatus === "sending" ? "Sending..." : "Request a Free Quote"}
             </button>
           </form>
         </div>
