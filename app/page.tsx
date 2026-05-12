@@ -57,8 +57,38 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-gradient-to-b from-white to-stone-100 px-5 py-6 sm:px-8 lg:px-10">
-        <div className="mx-auto max-w-5xl">
+      <section className="relative overflow-hidden bg-gradient-to-b from-white to-stone-100 px-5 sm:px-8 lg:px-10">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-y-0 left-0 z-0 hidden w-[16vw] flex-col gap-1 overflow-hidden opacity-45 brightness-75 xl:flex"
+        >
+          {[
+            "/images/stump-grinder.jpg",
+            "/images/480807077_608529052018575_8891667848226676131_n.jpg",
+            "/images/family-owned.jpg",
+            "/images/481995667_606737238864423_2537526134187271_n.jpg",
+          ].map((src) => (
+            <div className="relative min-h-0 flex-1 bg-zinc-900" key={src}>
+              <Image alt="" className="object-cover" fill src={src} />
+            </div>
+          ))}
+        </div>
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-y-0 right-0 z-0 hidden w-[16vw] flex-col gap-1 overflow-hidden opacity-45 brightness-75 xl:flex"
+        >
+          {[
+            "/images/481995667_606737238864423_2537526134187271_n.jpg",
+            "/images/dumpster-loading.jpg",
+            "/images/480807077_608529052018575_8891667848226676131_n.jpg",
+            "/images/stump-grinder.jpg",
+          ].map((src) => (
+            <div className="relative min-h-0 flex-1 bg-zinc-900" key={src}>
+              <Image alt="" className="object-cover" fill src={src} />
+            </div>
+          ))}
+        </div>
+        <div className="relative z-10 mx-auto min-h-full max-w-5xl bg-gradient-to-b from-white to-stone-100 px-4 py-6 sm:px-6 lg:px-8">
           <header className="flex flex-col gap-2 border-b border-zinc-200 pb-5 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <p className="text-3xl font-black tracking-tight text-zinc-950">
@@ -116,10 +146,10 @@ export default function Home() {
             <div className="grid justify-items-center gap-4 lg:justify-items-start">
               <Image
                 alt="ABC Work dumpster loading services"
-                className="h-auto max-h-[560px] w-auto max-w-full rounded-lg shadow-xl shadow-zinc-200"
+                className="h-auto max-h-[680px] w-auto max-w-full rounded-lg shadow-xl shadow-zinc-200"
                 height={1270}
                 priority
-                sizes="(min-width: 1024px) 420px, 100vw"
+                sizes="(min-width: 1024px) 520px, 100vw"
                 src="/images/dumpster-loading.jpg"
                 width={906}
               />
