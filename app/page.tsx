@@ -89,16 +89,13 @@ export default function Home() {
           ))}
         </div>
         <div className="relative z-10 mx-auto min-h-full max-w-5xl bg-gradient-to-b from-white to-stone-100 px-4 py-6 max-sm:py-3 sm:px-6 lg:px-8">
-          <header className="flex flex-col gap-2 border-b border-zinc-200 pb-5 max-sm:gap-0.5 max-sm:pb-2 sm:flex-row sm:items-end sm:justify-between">
-            <div>
-              <p className="text-3xl font-black tracking-tight text-zinc-950 max-sm:text-2xl">
+          <header className="flex flex-col items-center gap-2 border-b border-zinc-200 pb-5 text-center max-sm:gap-0.5 max-sm:pb-2 sm:flex-row sm:items-end sm:justify-between sm:text-left">
+            <div className="text-center sm:text-left">
+              <p className="inline-block border-y border-red-700/30 px-2 text-3xl font-black tracking-tight text-zinc-950 shadow-[0_1px_0_rgba(255,255,255,0.9),0_3px_0_rgba(30,64,175,0.16)] max-sm:text-2xl">
                 ABC Work
               </p>
-              <p className="mt-1 text-sm font-semibold text-zinc-600 max-sm:mt-0.5 max-sm:leading-tight">
-                Dumpster rentals, stump grinding, driveway grading, and tractor work
-              </p>
             </div>
-            <p className="text-sm font-bold uppercase tracking-[0.16em] text-orange-600 max-sm:text-xs">
+            <p className="hidden text-sm font-bold uppercase tracking-[0.16em] text-orange-600 sm:block sm:text-right">
               Citrus County, FL
             </p>
           </header>
@@ -124,9 +121,7 @@ export default function Home() {
                 Reliable dumpster rentals, stump grinding, and tractor services.
               </h1>
               <p className="mt-5 max-w-2xl text-lg leading-8 text-zinc-700 max-sm:mt-2.5 max-sm:text-[1.05rem] max-sm:leading-[1.68] max-sm:text-zinc-800">
-                ABC Work helps homeowners and property owners with dependable
-                dumpster rentals, stump grinding, driveway grading, tractor
-                work, garden tilling, and rock or dirt delivery.
+                Fast, reliable property services with straightforward pricing and local experience you can count on.
               </p>
               <div className="mt-6 hidden flex-col gap-3 max-sm:mt-2.5 sm:flex sm:flex-row">
                 <a
@@ -142,15 +137,15 @@ export default function Home() {
                   Request a Free Quote
                 </a>
               </div>
-              <div className="mt-8 grid gap-3 text-sm font-bold text-zinc-700 max-sm:mt-4 sm:grid-cols-3">
-                <p className="rounded-lg border border-stone-200 bg-gradient-to-b from-white to-stone-50 p-4 shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_6px_0_rgba(146,64,14,0.2),0_18px_28px_rgba(120,113,108,0.18),0_4px_8px_rgba(120,113,108,0.14)] max-sm:border-stone-100">
-                  Fast local response
+              <div className="mt-8 grid grid-cols-3 gap-3 text-sm font-bold text-zinc-700 max-sm:mt-4">
+                <p className="flex min-h-10 items-center justify-center rounded-lg border border-stone-200 bg-gradient-to-b from-white to-stone-50 px-3 py-2 text-center shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_6px_0_rgba(146,64,14,0.2),0_18px_28px_rgba(120,113,108,0.18),0_4px_8px_rgba(120,113,108,0.14)] max-sm:min-h-16 max-sm:border-stone-100 max-sm:px-2 max-sm:text-[0.78rem] max-sm:leading-tight">
+                  Fast Local Response
                 </p>
-                <p className="rounded-lg border border-stone-200 bg-gradient-to-b from-white to-stone-50 p-4 shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_6px_0_rgba(146,64,14,0.2),0_18px_28px_rgba(120,113,108,0.18),0_4px_8px_rgba(120,113,108,0.14)] max-sm:border-stone-100">
-                  Licensed and insured
+                <p className="flex min-h-10 items-center justify-center rounded-lg border border-stone-200 bg-gradient-to-b from-white to-stone-50 px-3 py-2 text-center shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_6px_0_rgba(146,64,14,0.2),0_18px_28px_rgba(120,113,108,0.18),0_4px_8px_rgba(120,113,108,0.14)] max-sm:min-h-16 max-sm:border-stone-100 max-sm:px-2 max-sm:text-[0.78rem] max-sm:leading-tight">
+                  Licensed and Insured
                 </p>
-                <p className="rounded-lg border border-stone-200 bg-gradient-to-b from-white to-stone-50 p-4 shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_6px_0_rgba(146,64,14,0.2),0_18px_28px_rgba(120,113,108,0.18),0_4px_8px_rgba(120,113,108,0.14)] max-sm:border-stone-100">
-                  Clear communication
+                <p className="flex min-h-10 items-center justify-center rounded-lg border border-stone-200 bg-gradient-to-b from-white to-stone-50 px-3 py-2 text-center shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_6px_0_rgba(146,64,14,0.2),0_18px_28px_rgba(120,113,108,0.18),0_4px_8px_rgba(120,113,108,0.14)] max-sm:min-h-16 max-sm:border-stone-100 max-sm:px-2 max-sm:text-[0.78rem] max-sm:leading-tight">
+                  Clear Communication
                 </p>
               </div>
             </div>
@@ -168,7 +163,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid gap-4 pb-8 sm:grid-cols-2 lg:pb-10">
+          <div className="grid gap-4 pb-8 sm:grid-cols-1 lg:grid-cols-3 lg:pb-10">
             <div className="rounded-xl border border-stone-200 bg-gradient-to-b from-white to-stone-50 p-5 shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_7px_0_rgba(146,64,14,0.18),0_22px_34px_rgba(120,113,108,0.2),0_5px_10px_rgba(120,113,108,0.15)]">
               <p className="text-sm font-black text-zinc-950">Dumpster Rentals</p>
               <p className="mt-2 text-sm leading-6 text-zinc-600">
@@ -179,6 +174,12 @@ export default function Home() {
               <p className="text-sm font-black text-zinc-950">Stump Grinding</p>
               <p className="mt-2 text-sm leading-6 text-zinc-600">
                 Clear stumps cleanly so yards and access areas open back up.
+              </p>
+            </div>
+            <div className="rounded-xl border border-stone-200 bg-gradient-to-b from-white to-stone-50 p-5 shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_7px_0_rgba(146,64,14,0.18),0_22px_34px_rgba(120,113,108,0.2),0_5px_10px_rgba(120,113,108,0.15)]">
+              <p className="text-sm font-black text-zinc-950">Tractor Work</p>
+              <p className="mt-2 text-sm leading-6 text-zinc-600">
+                Driveway grading, garden tilling, rock and dirt delivery, and general tractor work.
               </p>
             </div>
           </div>
