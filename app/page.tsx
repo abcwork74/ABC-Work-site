@@ -118,9 +118,9 @@ export default function Home() {
                   src="/images/448005019_430208936517255_3916163214568262560_n.jpg"
                   width={850}
                 />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-black/5 to-black/10" />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/30 via-black/5 to-transparent" />
               </div>
-              <h1 className="max-w-3xl text-4xl font-black leading-tight tracking-tight text-zinc-950 max-sm:text-[2.05rem] max-sm:leading-[1.04] max-sm:tracking-normal sm:text-5xl lg:text-5xl">
+              <h1 className="max-w-3xl text-4xl font-black leading-tight tracking-tight text-zinc-950 max-sm:text-[1.98rem] max-sm:leading-[1.04] max-sm:tracking-normal sm:text-5xl lg:text-5xl">
                 Reliable dumpsters, stump grinding, and cleanup services.
               </h1>
               <p className="mt-5 max-w-2xl text-lg leading-8 text-zinc-700 max-sm:mt-2.5 max-sm:text-[1.05rem] max-sm:leading-[1.68] max-sm:text-zinc-800">
@@ -372,7 +372,16 @@ export default function Home() {
         </div>
       </footer>
 
-      <div className="fixed inset-x-0 bottom-0 z-50 border-t border-zinc-200 bg-white/95 px-4 pb-[calc(env(safe-area-inset-bottom)+0.75rem)] pt-3 shadow-2xl shadow-zinc-950/20 backdrop-blur sm:hidden">
+      <div
+        className="fixed inset-x-0 bottom-0 z-50 px-4 pb-[calc(env(safe-area-inset-bottom)+0.75rem)] pt-3 sm:hidden"
+        style={{
+          background: "rgba(255,255,255,0.88)",
+          backdropFilter: "blur(14px)",
+          WebkitBackdropFilter: "blur(14px)",
+          borderTop: "1px solid rgba(0,0,0,0.08)",
+          boxShadow: "0 -14px 34px rgba(24,24,27,0.16)",
+        }}
+      >
         <div className="mx-auto grid max-w-md grid-cols-2 gap-3">
           <a
             className="inline-flex min-h-12 items-center justify-center rounded-md bg-orange-500 px-4 text-sm font-black text-zinc-950 shadow-md shadow-orange-200"
