@@ -2,28 +2,28 @@ import Image from "next/image";
 
 const services = [
   {
-    name: "Dumpster rentals",
-    detail: "Reliable dumpster options for cleanouts, remodels, debris, and job sites.",
+    name: "Dumpster Rentals",
+    detail: "Reliable dumpster options for remodels, roofing projects, property work, and job sites.",
   },
   {
-    name: "Stump grinding",
+    name: "Stump Grinding",
     detail: "Professional stump grinding to open up yards, driveways, and work areas.",
   },
   {
-    name: "Junk removal",
-    detail: "Furniture, clutter, and unwanted items removed without the hassle.",
+    name: "Rock & Dirt Delivery",
+    detail: "Rock and dirt delivery for driveways, landscaping, fill, and residential property projects.",
   },
   {
-    name: "Property cleanouts",
-    detail: "Help clearing garages, rentals, estates, and full properties.",
+    name: "Driveway Grading",
+    detail: "Driveway scraping, leveling, and grading to smooth rough areas and improve access.",
   },
   {
-    name: "Brush removal",
-    detail: "Branches, yard waste, storm debris, and overgrowth hauled away.",
+    name: "Garden Tilling",
+    detail: "Garden preparation and tilling for homeowners getting planting areas ready.",
   },
   {
-    name: "Debris removal",
-    detail: "Cleanup support for construction debris, brush, junk, and more.",
+    name: "General Tractor Work",
+    detail: "Tractor assistance for grading, spreading material, property maintenance, and small projects.",
   },
 ];
 
@@ -95,7 +95,7 @@ export default function Home() {
                 ABC Work
               </p>
               <p className="mt-1 text-sm font-semibold text-zinc-600 max-sm:mt-0.5 max-sm:leading-tight">
-                Dumpster rentals, stump grinding, junk removal, and cleanouts
+                Dumpster rentals, stump grinding, driveway grading, and tractor work
               </p>
             </div>
             <p className="text-sm font-bold uppercase tracking-[0.16em] text-orange-600 max-sm:text-xs">
@@ -121,12 +121,12 @@ export default function Home() {
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/30 via-black/5 to-transparent" />
               </div>
               <h1 className="max-w-3xl text-4xl font-black leading-tight tracking-tight text-zinc-950 max-sm:text-[1.98rem] max-sm:leading-[1.04] max-sm:tracking-normal sm:text-5xl lg:text-5xl">
-                Reliable dumpsters, stump grinding, and cleanup services.
+                Reliable dumpster rentals, stump grinding, and tractor services.
               </h1>
               <p className="mt-5 max-w-2xl text-lg leading-8 text-zinc-700 max-sm:mt-2.5 max-sm:text-[1.05rem] max-sm:leading-[1.68] max-sm:text-zinc-800">
-                ABC Work helps homeowners, contractors, and property managers
-                clear space with dependable dumpster rentals, professional stump
-                grinding, junk removal, cleanouts, and debris removal.
+                ABC Work helps homeowners and property owners with dependable
+                dumpster rentals, stump grinding, driveway grading, tractor
+                work, garden tilling, and rock or dirt delivery.
               </p>
               <div className="mt-6 hidden flex-col gap-3 max-sm:mt-2.5 sm:flex sm:flex-row">
                 <a
@@ -170,13 +170,13 @@ export default function Home() {
 
           <div className="grid gap-4 pb-8 sm:grid-cols-2 lg:pb-10">
             <div className="rounded-xl border border-stone-200 bg-gradient-to-b from-white to-stone-50 p-5 shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_7px_0_rgba(146,64,14,0.18),0_22px_34px_rgba(120,113,108,0.2),0_5px_10px_rgba(120,113,108,0.15)]">
-              <p className="text-sm font-black text-zinc-950">Dumpster rentals</p>
+              <p className="text-sm font-black text-zinc-950">Dumpster Rentals</p>
               <p className="mt-2 text-sm leading-6 text-zinc-600">
-                For remodels, cleanouts, brush, junk, and debris.
+                For remodels, roofing projects, property work, and job sites.
               </p>
             </div>
             <div className="rounded-xl border border-stone-200 bg-gradient-to-b from-white to-stone-50 p-5 shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_7px_0_rgba(146,64,14,0.18),0_22px_34px_rgba(120,113,108,0.2),0_5px_10px_rgba(120,113,108,0.15)]">
-              <p className="text-sm font-black text-zinc-950">Stump grinding</p>
+              <p className="text-sm font-black text-zinc-950">Stump Grinding</p>
               <p className="mt-2 text-sm leading-6 text-zinc-600">
                 Clear stumps cleanly so yards and access areas open back up.
               </p>
@@ -192,7 +192,7 @@ export default function Home() {
               Services
             </p>
             <h2 className="mt-3 text-3xl font-black tracking-tight text-zinc-950">
-              Practical help for tough cleanup and property projects.
+              Practical help for tough property and tractor projects.
             </h2>
           </div>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -201,9 +201,9 @@ export default function Home() {
                 className="rounded-xl border border-stone-200 bg-gradient-to-b from-white to-stone-50 p-5 shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_7px_0_rgba(146,64,14,0.18),0_22px_34px_rgba(120,113,108,0.2),0_5px_10px_rgba(120,113,108,0.15)] transition duration-150 ease-out hover:border-orange-300 hover:from-white hover:to-orange-50/40 hover:shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_7px_0_rgba(180,83,9,0.24),0_24px_38px_rgba(120,113,108,0.22),0_6px_12px_rgba(120,53,15,0.16)] active:translate-y-[3px] max-sm:border-stone-100 max-sm:p-6"
                 key={service.name}
               >
-                {service.name === "Dumpster rentals" ? (
+                {service.name === "Dumpster Rentals" ? (
                   <Image
-                    alt="ABC Work dumpster rental and cleanup"
+                    alt="ABC Work dumpster rental service"
                     className="mb-5 h-auto max-w-full rounded-md"
                     height={1004}
                     sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
@@ -211,7 +211,7 @@ export default function Home() {
                     width={2048}
                   />
                 ) : null}
-                {service.name === "Stump grinding" ? (
+                {service.name === "Stump Grinding" ? (
                   <Image
                     alt="ABC Work stump grinding service"
                     className="mb-5 h-auto max-w-full rounded-md"
@@ -221,9 +221,9 @@ export default function Home() {
                     width={831}
                   />
                 ) : null}
-                {service.name === "Junk removal" ? (
+                {service.name === "Rock & Dirt Delivery" ? (
                   <Image
-                    alt="ABC Work junk and debris removal"
+                    alt="ABC Work rock and dirt delivery"
                     className="mb-5 h-auto max-w-full rounded-md"
                     height={1210}
                     sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
@@ -265,7 +265,7 @@ export default function Home() {
               "Licensed and insured for peace of mind on every job.",
               "Responsive scheduling and straightforward communication.",
               "Ready for homes, rentals, job sites, and rural properties.",
-              "Dependable cleanup from the first call to the final haul.",
+              "Dependable property support from the first call to the finished job.",
             ].map((reason) => (
               <div
                 className="rounded-xl border border-stone-200 bg-gradient-to-b from-white to-stone-50 p-5 shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_7px_0_rgba(146,64,14,0.18),0_22px_34px_rgba(120,113,108,0.2),0_5px_10px_rgba(120,113,108,0.15)]"
@@ -311,12 +311,12 @@ export default function Home() {
               Free quote
             </p>
             <h2 className="mt-3 text-3xl font-black tracking-tight">
-              Tell us what needs to be cleared.
+              Tell us what project you need help with.
             </h2>
             <p className="mt-5 leading-8 text-zinc-700">
               Call for the fastest response, or send the basic details and ABC
               Work will follow up about scheduling, pricing, and the right
-              service for the job.
+              equipment for the job.
             </p>
             <div className="mt-6 rounded-xl border border-stone-200 bg-gradient-to-b from-white to-stone-50 p-5 shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_7px_0_rgba(146,64,14,0.18),0_22px_34px_rgba(120,113,108,0.2),0_5px_10px_rgba(120,113,108,0.15)]">
               <p className="font-black text-zinc-950">ABC Work</p>
@@ -347,7 +347,7 @@ export default function Home() {
               Service needed
               <input
                 className="min-h-12 rounded-md border border-zinc-300 bg-white px-4 font-normal outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-100"
-                placeholder="Dumpster rental, stump grinding, or cleanup"
+                placeholder="Dumpster rental, stump grinding, grading, or tractor work"
               />
             </label>
             <label className="grid gap-2 text-sm font-bold text-zinc-800">
@@ -367,7 +367,7 @@ export default function Home() {
       <footer className="border-t border-zinc-200 bg-white px-5 py-8 text-sm text-zinc-600 sm:px-8 lg:px-10">
         <div className="mx-auto flex max-w-6xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-lg font-black text-zinc-950">ABC Work</p>
-          <p>Dumpster rentals, stump grinding, junk removal, cleanouts, brush and debris removal.</p>
+          <p>Dumpster rentals, stump grinding, driveway grading, tractor work, rock and dirt delivery, and garden tilling.</p>
           <p className="font-semibold text-zinc-950">Licensed and insured</p>
         </div>
       </footer>
