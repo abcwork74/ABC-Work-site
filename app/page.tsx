@@ -105,10 +105,10 @@ export default function Home() {
 
           <div className="relative grid gap-8 py-8 max-sm:py-3 lg:grid-cols-[1fr_0.75fr] lg:items-center lg:gap-5 lg:py-10">
             <div>
-              <p className="mb-5 inline-flex items-center rounded-full border border-orange-300/70 bg-orange-50 px-4 py-2 text-sm font-black text-orange-700 shadow-sm shadow-orange-100 max-sm:mb-2 max-sm:px-3.5 max-sm:py-1.5">
+              <p className="mb-5 inline-flex items-center rounded-full border border-orange-300/90 bg-gradient-to-b from-orange-50 to-orange-100/80 px-4 py-2 text-sm font-black text-orange-700 shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_6px_0_rgba(180,83,9,0.28),0_18px_30px_rgba(120,53,15,0.2),0_3px_8px_rgba(120,53,15,0.2)] max-sm:mb-2 max-sm:px-3.5 max-sm:py-1.5">
                 Serving Citrus County and surrounding areas.
               </p>
-              <div className="relative mb-3.5 aspect-[16/9] overflow-hidden rounded-lg shadow-xl shadow-zinc-300/70 transition-transform duration-200 active:scale-[0.99] sm:hidden">
+              <div className="relative mb-3.5 aspect-[16/9] overflow-hidden rounded-lg shadow-[0_4px_0_rgba(120,113,108,0.18),0_16px_28px_rgba(41,37,36,0.16)] transition-transform duration-150 ease-out active:translate-y-[2px] active:shadow-[0_1px_0_rgba(120,113,108,0.16),0_6px_14px_rgba(41,37,36,0.12)] sm:hidden">
                 <Image
                   alt="ABC Work dumpster rental truck and trailer"
                   className="h-full w-full object-cover contrast-105 saturate-110"
@@ -130,26 +130,26 @@ export default function Home() {
               </p>
               <div className="mt-6 hidden flex-col gap-3 max-sm:mt-2.5 sm:flex sm:flex-row">
                 <a
-                  className="inline-flex min-h-14 items-center justify-center rounded-md bg-orange-500 px-8 text-base font-black text-zinc-950 shadow-lg shadow-orange-200 transition hover:bg-orange-400"
+                  className="inline-flex min-h-14 items-center justify-center rounded-lg border border-orange-400/90 bg-gradient-to-b from-orange-400 to-orange-500 px-8 text-base font-black text-zinc-950 shadow-[inset_0_2px_0_rgba(255,255,255,0.5),0_6px_0_rgba(154,52,18,0.85),0_18px_30px_rgba(194,65,12,0.34),0_4px_9px_rgba(124,45,18,0.28)] transition duration-150 ease-out hover:from-orange-300 hover:to-orange-500 active:translate-y-[4px] active:shadow-[inset_0_1px_0_rgba(255,255,255,0.28),0_2px_0_rgba(154,52,18,0.62),0_7px_14px_rgba(194,65,12,0.2)]"
                   href="tel:3524365635"
                 >
                   Call Now
                 </a>
                 <a
-                  className="inline-flex min-h-14 items-center justify-center rounded-md border border-zinc-900 bg-zinc-950 px-8 text-base font-bold text-white transition hover:bg-zinc-800"
+                  className="inline-flex min-h-14 items-center justify-center rounded-lg border border-zinc-800 bg-gradient-to-b from-zinc-800 to-zinc-950 px-8 text-base font-bold text-white shadow-[inset_0_2px_0_rgba(255,255,255,0.2),0_6px_0_rgba(0,0,0,0.78),0_18px_30px_rgba(24,24,27,0.32),0_4px_9px_rgba(0,0,0,0.28)] transition duration-150 ease-out hover:from-zinc-700 hover:to-zinc-950 active:translate-y-[4px] active:shadow-[inset_0_1px_0_rgba(255,255,255,0.1),0_2px_0_rgba(0,0,0,0.62),0_7px_14px_rgba(24,24,27,0.2)]"
                   href="#quote"
                 >
                   Request a Free Quote
                 </a>
               </div>
               <div className="mt-8 grid gap-3 text-sm font-bold text-zinc-700 max-sm:mt-4 sm:grid-cols-3">
-                <p className="rounded-md border border-zinc-200 bg-white p-4 shadow-sm max-sm:border-zinc-100 max-sm:shadow-md max-sm:shadow-zinc-200/70">
+                <p className="rounded-lg border border-stone-200 bg-gradient-to-b from-white to-stone-50 p-4 shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_6px_0_rgba(146,64,14,0.2),0_18px_28px_rgba(120,113,108,0.18),0_4px_8px_rgba(120,113,108,0.14)] max-sm:border-stone-100">
                   Fast local response
                 </p>
-                <p className="rounded-md border border-zinc-200 bg-white p-4 shadow-sm max-sm:border-zinc-100 max-sm:shadow-md max-sm:shadow-zinc-200/70">
+                <p className="rounded-lg border border-stone-200 bg-gradient-to-b from-white to-stone-50 p-4 shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_6px_0_rgba(146,64,14,0.2),0_18px_28px_rgba(120,113,108,0.18),0_4px_8px_rgba(120,113,108,0.14)] max-sm:border-stone-100">
                   Licensed and insured
                 </p>
-                <p className="rounded-md border border-zinc-200 bg-white p-4 shadow-sm max-sm:border-zinc-100 max-sm:shadow-md max-sm:shadow-zinc-200/70">
+                <p className="rounded-lg border border-stone-200 bg-gradient-to-b from-white to-stone-50 p-4 shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_6px_0_rgba(146,64,14,0.2),0_18px_28px_rgba(120,113,108,0.18),0_4px_8px_rgba(120,113,108,0.14)] max-sm:border-stone-100">
                   Clear communication
                 </p>
               </div>
@@ -169,13 +169,13 @@ export default function Home() {
           </div>
 
           <div className="grid gap-4 pb-8 sm:grid-cols-2 lg:pb-10">
-            <div className="rounded-lg border border-zinc-200 bg-white p-5 shadow-sm">
+            <div className="rounded-xl border border-stone-200 bg-gradient-to-b from-white to-stone-50 p-5 shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_7px_0_rgba(146,64,14,0.18),0_22px_34px_rgba(120,113,108,0.2),0_5px_10px_rgba(120,113,108,0.15)]">
               <p className="text-sm font-black text-zinc-950">Dumpster rentals</p>
               <p className="mt-2 text-sm leading-6 text-zinc-600">
                 For remodels, cleanouts, brush, junk, and debris.
               </p>
             </div>
-            <div className="rounded-lg border border-zinc-200 bg-white p-5 shadow-sm">
+            <div className="rounded-xl border border-stone-200 bg-gradient-to-b from-white to-stone-50 p-5 shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_7px_0_rgba(146,64,14,0.18),0_22px_34px_rgba(120,113,108,0.2),0_5px_10px_rgba(120,113,108,0.15)]">
               <p className="text-sm font-black text-zinc-950">Stump grinding</p>
               <p className="mt-2 text-sm leading-6 text-zinc-600">
                 Clear stumps cleanly so yards and access areas open back up.
@@ -198,7 +198,7 @@ export default function Home() {
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => (
               <div
-                className="rounded-lg border border-zinc-200 bg-stone-50 p-5 transition hover:border-orange-300 hover:bg-white hover:shadow-md max-sm:border-zinc-100 max-sm:p-6 max-sm:shadow-lg max-sm:shadow-zinc-200/60"
+                className="rounded-xl border border-stone-200 bg-gradient-to-b from-white to-stone-50 p-5 shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_7px_0_rgba(146,64,14,0.18),0_22px_34px_rgba(120,113,108,0.2),0_5px_10px_rgba(120,113,108,0.15)] transition duration-150 ease-out hover:border-orange-300 hover:from-white hover:to-orange-50/40 hover:shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_7px_0_rgba(180,83,9,0.24),0_24px_38px_rgba(120,113,108,0.22),0_6px_12px_rgba(120,53,15,0.16)] active:translate-y-[3px] max-sm:border-stone-100 max-sm:p-6"
                 key={service.name}
               >
                 {service.name === "Dumpster rentals" ? (
@@ -268,7 +268,7 @@ export default function Home() {
               "Dependable cleanup from the first call to the final haul.",
             ].map((reason) => (
               <div
-                className="rounded-lg border border-zinc-200 bg-white p-5 shadow-sm"
+                className="rounded-xl border border-stone-200 bg-gradient-to-b from-white to-stone-50 p-5 shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_7px_0_rgba(146,64,14,0.18),0_22px_34px_rgba(120,113,108,0.2),0_5px_10px_rgba(120,113,108,0.15)]"
                 key={reason}
               >
                 <div className="flex gap-4">
@@ -318,7 +318,7 @@ export default function Home() {
               Work will follow up about scheduling, pricing, and the right
               service for the job.
             </p>
-            <div className="mt-6 rounded-lg border border-zinc-200 bg-white p-5 shadow-sm">
+            <div className="mt-6 rounded-xl border border-stone-200 bg-gradient-to-b from-white to-stone-50 p-5 shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_7px_0_rgba(146,64,14,0.18),0_22px_34px_rgba(120,113,108,0.2),0_5px_10px_rgba(120,113,108,0.15)]">
               <p className="font-black text-zinc-950">ABC Work</p>
               <p className="mt-1 text-sm font-semibold text-zinc-600">
                 Licensed and insured
@@ -332,7 +332,7 @@ export default function Home() {
             </div>
           </div>
 
-          <form className="grid gap-4 rounded-lg border border-zinc-200 bg-white p-5 shadow-lg shadow-zinc-200 sm:p-6">
+          <form className="grid gap-4 rounded-xl border border-stone-200 bg-gradient-to-b from-white to-stone-50 p-5 shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_7px_0_rgba(146,64,14,0.18),0_24px_38px_rgba(120,113,108,0.22),0_5px_10px_rgba(120,113,108,0.15)] sm:p-6">
             <div className="grid gap-4 sm:grid-cols-2">
               <label className="grid gap-2 text-sm font-bold text-zinc-800">
                 Name
@@ -355,7 +355,7 @@ export default function Home() {
               <textarea className="min-h-32 rounded-md border border-zinc-300 bg-white px-4 py-3 font-normal outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-100" />
             </label>
             <button
-              className="min-h-14 rounded-md bg-orange-500 px-6 text-base font-black text-zinc-950 shadow-md shadow-orange-100 transition hover:bg-orange-400"
+              className="min-h-14 rounded-lg border border-orange-400/90 bg-gradient-to-b from-orange-400 to-orange-500 px-6 text-base font-black text-zinc-950 shadow-[inset_0_2px_0_rgba(255,255,255,0.5),0_6px_0_rgba(154,52,18,0.85),0_18px_30px_rgba(194,65,12,0.3),0_4px_9px_rgba(124,45,18,0.24)] transition duration-150 ease-out hover:from-orange-300 hover:to-orange-500 active:translate-y-[4px] active:shadow-[inset_0_1px_0_rgba(255,255,255,0.28),0_2px_0_rgba(154,52,18,0.62),0_7px_14px_rgba(194,65,12,0.2)]"
               type="button"
             >
               Request a Free Quote
@@ -384,13 +384,13 @@ export default function Home() {
       >
         <div className="mx-auto grid max-w-md grid-cols-2 gap-3">
           <a
-            className="inline-flex min-h-12 items-center justify-center rounded-md bg-orange-500 px-4 text-sm font-black text-zinc-950 shadow-md shadow-orange-200"
+            className="inline-flex min-h-12 items-center justify-center rounded-lg border border-orange-400/90 bg-gradient-to-b from-orange-400 to-orange-500 px-4 text-sm font-black text-zinc-950 shadow-[inset_0_2px_0_rgba(255,255,255,0.5),0_6px_0_rgba(154,52,18,0.85),0_16px_26px_rgba(194,65,12,0.3),0_4px_9px_rgba(124,45,18,0.24)] transition duration-150 ease-out active:translate-y-[4px] active:shadow-[inset_0_1px_0_rgba(255,255,255,0.28),0_2px_0_rgba(154,52,18,0.62),0_6px_12px_rgba(194,65,12,0.18)]"
             href="tel:3524365635"
           >
             Call Now
           </a>
           <a
-            className="inline-flex min-h-12 items-center justify-center rounded-md bg-zinc-950 px-4 text-sm font-black text-white shadow-md shadow-zinc-300"
+            className="inline-flex min-h-12 items-center justify-center rounded-lg border border-zinc-800 bg-gradient-to-b from-zinc-800 to-zinc-950 px-4 text-sm font-black text-white shadow-[inset_0_2px_0_rgba(255,255,255,0.2),0_6px_0_rgba(0,0,0,0.78),0_16px_26px_rgba(24,24,27,0.32),0_4px_9px_rgba(0,0,0,0.28)] transition duration-150 ease-out active:translate-y-[4px] active:shadow-[inset_0_1px_0_rgba(255,255,255,0.1),0_2px_0_rgba(0,0,0,0.62),0_6px_12px_rgba(24,24,27,0.18)]"
             href="#quote"
           >
             Request Quote
