@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const services = [
   {
     name: "Dumpster rentals",
@@ -71,20 +73,20 @@ export default function Home() {
             </p>
           </header>
 
-          <div className="grid gap-10 py-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:py-16">
+          <div className="grid gap-8 py-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:py-10">
             <div>
               <p className="mb-5 inline-flex rounded-full border border-orange-200 bg-orange-50 px-4 py-2 text-sm font-black text-orange-700">
                 Serving Citrus County and surrounding areas.
               </p>
-              <h1 className="max-w-3xl text-4xl font-black leading-tight tracking-tight text-zinc-950 sm:text-5xl lg:text-6xl">
+              <h1 className="max-w-3xl text-4xl font-black leading-tight tracking-tight text-zinc-950 sm:text-5xl lg:text-5xl">
                 Reliable dumpsters, stump grinding, and cleanup services.
               </h1>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-700">
+              <p className="mt-5 max-w-2xl text-lg leading-8 text-zinc-700">
                 ABC Work helps homeowners, contractors, and property managers
                 clear space with dependable dumpster rentals, professional stump
                 grinding, junk removal, cleanouts, and debris removal.
               </p>
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <div className="mt-6 flex flex-col gap-3 sm:flex-row">
                 <a
                   className="inline-flex min-h-14 items-center justify-center rounded-md bg-orange-500 px-8 text-base font-black text-zinc-950 shadow-lg shadow-orange-200 transition hover:bg-orange-400"
                   href="tel:3524365635"
@@ -111,23 +113,16 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="grid gap-4">
-              <div className="aspect-[4/3] rounded-lg border border-zinc-200 bg-white p-4 shadow-xl shadow-zinc-200">
-                <div className="flex h-full flex-col justify-between rounded-md border border-zinc-200 bg-gradient-to-br from-zinc-100 via-white to-orange-100 p-5">
-                  <p className="w-fit rounded-full bg-white px-3 py-1 text-xs font-black uppercase tracking-[0.14em] text-orange-700 shadow-sm">
-                    Photo placeholder
-                  </p>
-                  <div>
-                    <p className="text-2xl font-black text-zinc-950">
-                      Local cleanup and equipment service
-                    </p>
-                    <p className="mt-2 max-w-sm text-sm font-semibold leading-6 text-zinc-700">
-                      Add real dumpster, stump grinding, and cleanout photos
-                      here later.
-                    </p>
-                  </div>
-                </div>
-              </div>
+            <div className="grid justify-items-center gap-4 lg:justify-items-end">
+              <Image
+                alt="ABC Work dumpster loading services"
+                className="h-auto max-h-[420px] w-auto max-w-full rounded-lg shadow-xl shadow-zinc-200"
+                height={1270}
+                priority
+                sizes="(min-width: 1024px) 420px, 100vw"
+                src="/images/dumpster-loading.jpg"
+                width={906}
+              />
               <div className="grid gap-4 sm:grid-cols-2">
                 <div className="rounded-lg border border-zinc-200 bg-white p-5 shadow-sm">
                   <p className="text-sm font-black text-zinc-950">Dumpster rentals</p>
@@ -163,6 +158,36 @@ export default function Home() {
                 className="rounded-lg border border-zinc-200 bg-stone-50 p-5 transition hover:border-orange-300 hover:bg-white hover:shadow-md"
                 key={service.name}
               >
+                {service.name === "Dumpster rentals" ? (
+                  <Image
+                    alt="ABC Work dumpster rental and cleanup"
+                    className="mb-5 h-auto max-w-full rounded-md"
+                    height={1004}
+                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                    src="/images/481995667_606737238864423_2537526134187271_n.jpg"
+                    width={2048}
+                  />
+                ) : null}
+                {service.name === "Stump grinding" ? (
+                  <Image
+                    alt="ABC Work stump grinding service"
+                    className="mb-5 h-auto max-w-full rounded-md"
+                    height={574}
+                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                    src="/images/stump-grinder.jpg"
+                    width={831}
+                  />
+                ) : null}
+                {service.name === "Junk removal" ? (
+                  <Image
+                    alt="ABC Work junk and debris removal"
+                    className="mb-5 h-auto max-w-full rounded-md"
+                    height={1210}
+                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                    src="/images/480807077_608529052018575_8891667848226676131_n.jpg"
+                    width={2048}
+                  />
+                ) : null}
                 <div className="mb-5 h-1.5 w-12 rounded-full bg-orange-500" />
                 <h3 className="text-lg font-black">{service.name}</h3>
                 <p className="mt-3 text-sm leading-6 text-zinc-600">
@@ -183,13 +208,14 @@ export default function Home() {
             <h2 className="mt-3 text-3xl font-black tracking-tight">
               A local crew you can trust on your property.
             </h2>
-            <div className="mt-6 aspect-[5/3] rounded-lg border border-zinc-200 bg-white p-4 shadow-sm">
-              <div className="flex h-full items-end rounded-md bg-gradient-to-br from-zinc-200 via-zinc-100 to-orange-100 p-5">
-                <p className="rounded-full bg-white px-3 py-1 text-xs font-black uppercase tracking-[0.14em] text-zinc-700 shadow-sm">
-                  Photo placeholder
-                </p>
-              </div>
-            </div>
+            <Image
+              alt="ABC Work family owned local service"
+              className="mt-6 h-auto max-w-full rounded-lg shadow-sm"
+              height={1248}
+              sizes="(min-width: 1024px) 420px, 100vw"
+              src="/images/family-owned.jpg"
+              width={944}
+            />
           </div>
           <div className="grid gap-4">
             {[
