@@ -130,13 +130,13 @@ export default function Home() {
               </p>
               <div className="mt-6 hidden flex-col gap-3 max-sm:mt-2.5 sm:flex sm:flex-row">
                 <a
-                  className="inline-flex min-h-14 items-center justify-center rounded-lg border border-orange-400/90 bg-gradient-to-b from-orange-400 to-orange-500 px-8 text-base font-black text-zinc-950 shadow-[inset_0_2px_0_rgba(255,255,255,0.5),0_6px_0_rgba(154,52,18,0.85),0_18px_30px_rgba(194,65,12,0.34),0_4px_9px_rgba(124,45,18,0.28)] transition duration-150 ease-out hover:from-orange-300 hover:to-orange-500 active:translate-y-[4px] active:shadow-[inset_0_1px_0_rgba(255,255,255,0.28),0_2px_0_rgba(154,52,18,0.62),0_7px_14px_rgba(194,65,12,0.2)]"
+                  className="inline-flex min-h-14 items-center justify-center rounded-lg border border-[#c94f0b]/80 bg-gradient-to-b from-[#f47c20] to-[#dd5f0b] px-8 text-base font-black text-zinc-950 shadow-[inset_0_1px_0_rgba(255,255,255,0.42),0_4px_0_rgba(171,63,10,0.72),0_13px_24px_rgba(39,39,42,0.18),0_3px_7px_rgba(63,63,70,0.14)] transition duration-150 ease-out hover:from-[#ff8a2a] hover:to-[#dd5f0b] active:translate-y-[3px] active:shadow-[inset_0_1px_0_rgba(255,255,255,0.26),0_1px_0_rgba(171,63,10,0.58),0_6px_12px_rgba(39,39,42,0.14)]"
                   href="tel:3524365635"
                 >
                   Call Now
                 </a>
                 <a
-                  className="inline-flex min-h-14 items-center justify-center rounded-lg border border-zinc-800 bg-gradient-to-b from-zinc-800 to-zinc-950 px-8 text-base font-bold text-white shadow-[inset_0_2px_0_rgba(255,255,255,0.2),0_6px_0_rgba(0,0,0,0.78),0_18px_30px_rgba(24,24,27,0.32),0_4px_9px_rgba(0,0,0,0.28)] transition duration-150 ease-out hover:from-zinc-700 hover:to-zinc-950 active:translate-y-[4px] active:shadow-[inset_0_1px_0_rgba(255,255,255,0.1),0_2px_0_rgba(0,0,0,0.62),0_7px_14px_rgba(24,24,27,0.2)]"
+                  className="inline-flex min-h-14 items-center justify-center rounded-lg border border-zinc-800 bg-gradient-to-b from-zinc-800 to-zinc-950 px-8 text-base font-bold text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.18),0_4px_0_rgba(0,0,0,0.68),0_13px_24px_rgba(39,39,42,0.24),0_3px_7px_rgba(0,0,0,0.2)] transition duration-150 ease-out hover:from-zinc-700 hover:to-zinc-950 active:translate-y-[3px] active:shadow-[inset_0_1px_0_rgba(255,255,255,0.1),0_1px_0_rgba(0,0,0,0.56),0_6px_12px_rgba(39,39,42,0.16)]"
                   href="#quote"
                 >
                   Request a Free Quote
@@ -355,7 +355,7 @@ export default function Home() {
               <textarea className="min-h-32 rounded-md border border-zinc-300 bg-white px-4 py-3 font-normal outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-100" />
             </label>
             <button
-              className="min-h-14 rounded-lg border border-orange-400/90 bg-gradient-to-b from-orange-400 to-orange-500 px-6 text-base font-black text-zinc-950 shadow-[inset_0_2px_0_rgba(255,255,255,0.5),0_6px_0_rgba(154,52,18,0.85),0_18px_30px_rgba(194,65,12,0.3),0_4px_9px_rgba(124,45,18,0.24)] transition duration-150 ease-out hover:from-orange-300 hover:to-orange-500 active:translate-y-[4px] active:shadow-[inset_0_1px_0_rgba(255,255,255,0.28),0_2px_0_rgba(154,52,18,0.62),0_7px_14px_rgba(194,65,12,0.2)]"
+              className="min-h-14 rounded-lg border border-[#c94f0b]/80 bg-gradient-to-b from-[#f47c20] to-[#dd5f0b] px-6 text-base font-black text-zinc-950 shadow-[inset_0_1px_0_rgba(255,255,255,0.42),0_4px_0_rgba(171,63,10,0.72),0_13px_24px_rgba(39,39,42,0.17),0_3px_7px_rgba(63,63,70,0.13)] transition duration-150 ease-out hover:from-[#ff8a2a] hover:to-[#dd5f0b] active:translate-y-[3px] active:shadow-[inset_0_1px_0_rgba(255,255,255,0.26),0_1px_0_rgba(171,63,10,0.58),0_6px_12px_rgba(39,39,42,0.14)]"
               type="button"
             >
               Request a Free Quote
@@ -384,13 +384,13 @@ export default function Home() {
       >
         <div className="mx-auto grid max-w-md grid-cols-2 gap-3">
           <a
-            className="inline-flex min-h-12 items-center justify-center rounded-lg border border-orange-400/90 bg-gradient-to-b from-orange-400 to-orange-500 px-4 text-sm font-black text-zinc-950 shadow-[inset_0_2px_0_rgba(255,255,255,0.5),0_6px_0_rgba(154,52,18,0.85),0_16px_26px_rgba(194,65,12,0.3),0_4px_9px_rgba(124,45,18,0.24)] transition duration-150 ease-out active:translate-y-[4px] active:shadow-[inset_0_1px_0_rgba(255,255,255,0.28),0_2px_0_rgba(154,52,18,0.62),0_6px_12px_rgba(194,65,12,0.18)]"
+            className="inline-flex min-h-12 items-center justify-center rounded-lg border border-[#c94f0b]/80 bg-gradient-to-b from-[#f47c20] to-[#dd5f0b] px-4 text-sm font-black text-zinc-950 shadow-[inset_0_1px_0_rgba(255,255,255,0.42),0_4px_0_rgba(171,63,10,0.72),0_12px_20px_rgba(39,39,42,0.18),0_3px_7px_rgba(63,63,70,0.14)] transition duration-150 ease-out active:translate-y-[3px] active:shadow-[inset_0_1px_0_rgba(255,255,255,0.26),0_1px_0_rgba(171,63,10,0.58),0_5px_10px_rgba(39,39,42,0.13)]"
             href="tel:3524365635"
           >
             Call Now
           </a>
           <a
-            className="inline-flex min-h-12 items-center justify-center rounded-lg border border-zinc-800 bg-gradient-to-b from-zinc-800 to-zinc-950 px-4 text-sm font-black text-white shadow-[inset_0_2px_0_rgba(255,255,255,0.2),0_6px_0_rgba(0,0,0,0.78),0_16px_26px_rgba(24,24,27,0.32),0_4px_9px_rgba(0,0,0,0.28)] transition duration-150 ease-out active:translate-y-[4px] active:shadow-[inset_0_1px_0_rgba(255,255,255,0.1),0_2px_0_rgba(0,0,0,0.62),0_6px_12px_rgba(24,24,27,0.18)]"
+            className="inline-flex min-h-12 items-center justify-center rounded-lg border border-zinc-800 bg-gradient-to-b from-zinc-800 to-zinc-950 px-4 text-sm font-black text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.18),0_4px_0_rgba(0,0,0,0.68),0_12px_20px_rgba(39,39,42,0.24),0_3px_7px_rgba(0,0,0,0.2)] transition duration-150 ease-out active:translate-y-[3px] active:shadow-[inset_0_1px_0_rgba(255,255,255,0.1),0_1px_0_rgba(0,0,0,0.56),0_5px_10px_rgba(39,39,42,0.16)]"
             href="#quote"
           >
             Request Quote
