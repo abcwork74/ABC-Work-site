@@ -304,11 +304,15 @@ export default function Home() {
                   ? {
                       ...service,
                       name: "Driveway Grading & Garden Tilling",
+                      detail:
+                        "Driveway scraping, leveling, grading, and garden tilling to improve access and prepare planting areas.",
                     }
                   : service.name === "Garden Tilling"
                     ? {
                         ...service,
                         name: "Debris Clearing",
+                        detail:
+                          "Cleanup and removal of debris, broken concrete, brush, and unwanted material from property and work areas.",
                       }
                     : service;
 
