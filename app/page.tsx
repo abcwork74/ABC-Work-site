@@ -17,16 +17,16 @@ const services = [
     detail: "Rock and dirt delivery for driveways, landscaping, fill, and residential property projects.",
   },
   {
-    name: "Driveway Grading",
-    detail: "Driveway scraping, leveling, and grading to smooth rough areas and improve access.",
-  },
-  {
-    name: "Garden Tilling",
-    detail: "Garden preparation and tilling for homeowners getting planting areas ready.",
+    name: "Driveway Grading & Garden Tilling",
+    detail: "Driveway scraping, leveling, grading, and garden preparation for homeowners.",
   },
   {
     name: "General Tractor Work",
     detail: "Tractor assistance for grading, spreading material, property maintenance, and small projects.",
+  },
+  {
+    name: "Debris Clearing",
+    detail: "Clearing brush, limbs, and property debris from work areas, driveways, and lots.",
   },
 ];
 
@@ -261,6 +261,36 @@ export default function Home() {
                     width={2048}
                   />
                 ) : null}
+                {service.name === "Driveway Grading & Garden Tilling" ? (
+                  <Image
+                    alt="ABC Work driveway grading and garden tilling"
+                    className="mb-5 h-auto max-w-full rounded-md"
+                    height={600}
+                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                    src="/images/drive way.jpeg"
+                    width={450}
+                  />
+                ) : null}
+                {service.name === "General Tractor Work" ? (
+                  <Image
+                    alt="ABC Work general tractor work"
+                    className="mb-5 h-auto max-w-full rounded-md"
+                    height={1448}
+                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                    src="/images/tractor work.png"
+                    width={1086}
+                  />
+                ) : null}
+                {service.name === "Debris Clearing" ? (
+                  <Image
+                    alt="ABC Work debris clearing"
+                    className="mb-5 h-auto max-w-full rounded-md"
+                    height={450}
+                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                    src="/images/debris.jpeg"
+                    width={600}
+                  />
+                ) : null}
                 <div className="mb-5 h-1.5 w-12 rounded-full bg-orange-500" />
                 <h3 className="text-lg font-black max-sm:text-xl">{service.name}</h3>
                 <p className="mt-3 text-sm leading-6 text-zinc-600 max-sm:text-base max-sm:leading-7">
@@ -414,6 +444,22 @@ export default function Home() {
         <div className="mx-auto flex max-w-6xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-lg font-black text-zinc-950">ABC Work</p>
           <p>Dumpster rentals, stump grinding, driveway grading, tractor work, rock and dirt delivery, and garden tilling.</p>
+          <a
+            className="inline-flex items-center gap-2 font-semibold text-zinc-700 transition hover:text-orange-600"
+            href="PASTE_FACEBOOK_URL_HERE"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <svg
+              aria-hidden="true"
+              className="h-4 w-4 flex-none"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.52 1.49-3.91 3.77-3.91 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.89h2.78l-.44 2.91h-2.34V22C18.34 21.24 22 17.08 22 12.06z" />
+            </svg>
+            Follow ABC Work on Facebook
+          </a>
           <p className="font-semibold text-zinc-950">Licensed and insured</p>
         </div>
       </footer>
