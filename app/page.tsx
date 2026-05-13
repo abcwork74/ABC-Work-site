@@ -404,9 +404,9 @@ export default function Home() {
               <a className="mt-1 block font-semibold text-zinc-700" href="mailto:abcwork74@gmail.com">
                 abcwork74@gmail.com
               </a>
-              <div className="mt-4 grid gap-2">
+              <div className="mt-4 grid justify-items-center gap-2">
                 <a
-                  className="inline-flex items-center justify-center rounded-full border border-[#0f5fca] bg-[#1877F2] px-3.5 py-1 text-xs font-bold text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_2px_0_rgba(15,95,202,0.7),0_7px_14px_rgba(24,119,242,0.2)] transition hover:bg-[#166fe5]"
+                  className="inline-flex w-4/5 items-center justify-center rounded-full border border-[#0f5fca] bg-[#1877F2] px-3.5 py-1 text-xs font-bold text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_2px_0_rgba(15,95,202,0.7),0_7px_14px_rgba(24,119,242,0.2)] transition hover:bg-[#166fe5] sm:w-1/2"
                   href="https://www.facebook.com/people/ABC-WORK/100085844552651/"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -414,7 +414,7 @@ export default function Home() {
                   Follow ABC Work on Facebook
                 </a>
                 <a
-                  className="inline-flex items-center justify-center rounded-full border border-stone-300 bg-gradient-to-b from-white to-stone-50 px-3.5 py-1 text-xs font-bold text-zinc-800 shadow-[inset_0_1px_0_rgba(255,255,255,0.95),0_2px_0_rgba(146,64,14,0.1),0_7px_14px_rgba(120,113,108,0.12)] transition hover:border-orange-300 hover:text-orange-700"
+                  className="inline-flex w-4/5 items-center justify-center rounded-full border border-stone-300 bg-gradient-to-b from-white to-stone-50 px-3.5 py-1 text-xs font-bold text-zinc-800 shadow-[inset_0_1px_0_rgba(255,255,255,0.95),0_2px_0_rgba(146,64,14,0.1),0_7px_14px_rgba(120,113,108,0.12)] transition hover:border-orange-300 hover:text-orange-700 sm:w-1/2"
                   href="https://www.google.com/maps/place/ABC+Work/%4028.9418556%2c-83.8118365%2c8z/data=%213m1%214b1%214m6%213m5%211s0x6c6f9b0c11527d19:0xf0f681309537ea30%218m2%213d28.94829%214d-82.492436%2116s/g/11v40zbby8?entry=ttu&g_ep=EgoyMDI2MDUxMC4wIKXMDSoASAFQAw%3D%3D"
                   rel="noopener noreferrer"
                   target="_blank"
