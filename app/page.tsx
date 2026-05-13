@@ -129,7 +129,7 @@ export default function Home() {
 
           <div className="relative grid gap-8 py-8 max-sm:py-3 lg:grid-cols-[1fr_0.75fr] lg:items-center lg:gap-5 lg:py-10">
             <div>
-              <p className="mb-5 inline-flex items-center rounded-full border border-orange-300/90 bg-gradient-to-b from-orange-50 to-orange-100/80 px-4 py-2 text-sm font-black text-orange-700 shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_6px_0_rgba(180,83,9,0.28),0_18px_30px_rgba(120,53,15,0.2),0_3px_8px_rgba(120,53,15,0.2)] max-sm:mb-2 max-sm:px-3.5 max-sm:py-1.5">
+              <p className="mb-5 inline-flex items-center rounded-full border border-orange-300/90 bg-gradient-to-b from-orange-50 to-orange-100/80 px-4 py-2 text-sm font-black text-orange-700 shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_6px_0_rgba(180,83,9,0.28),0_18px_30px_rgba(120,53,15,0.2),0_3px_8px_rgba(120,53,15,0.2)] max-sm:mb-2 max-sm:whitespace-nowrap max-sm:px-2.5 max-sm:py-1.5 max-sm:text-[0.78rem]">
                 Serving Citrus County and surrounding areas.
               </p>
               <div className="relative mb-3.5 aspect-[16/9] overflow-hidden rounded-lg shadow-[0_4px_0_rgba(120,113,108,0.18),0_16px_28px_rgba(41,37,36,0.16)] transition-transform duration-150 ease-out active:translate-y-[2px] active:shadow-[0_1px_0_rgba(120,113,108,0.16),0_6px_14px_rgba(41,37,36,0.12)] sm:hidden">
