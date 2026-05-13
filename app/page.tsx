@@ -389,6 +389,24 @@ export default function Home() {
               <a className="mt-1 block font-semibold text-zinc-700" href="mailto:abcwork74@gmail.com">
                 abcwork74@gmail.com
               </a>
+              <div className="mt-4 grid gap-2">
+                <a
+                  className="inline-flex items-center justify-center rounded-full border border-zinc-800 bg-gradient-to-b from-zinc-800 to-zinc-950 px-4 py-2 text-sm font-bold text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.16),0_3px_0_rgba(0,0,0,0.62),0_10px_18px_rgba(39,39,42,0.18)] transition hover:from-zinc-700 hover:to-zinc-950"
+                  href="https://www.facebook.com/people/ABC-WORK/100085844552651/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Follow ABC Work on Facebook
+                </a>
+                <a
+                  className="inline-flex items-center justify-center rounded-full border border-stone-200 bg-gradient-to-b from-white to-stone-50 px-4 py-2 text-sm font-bold text-zinc-800 shadow-[inset_0_1px_0_rgba(255,255,255,0.95),0_3px_0_rgba(146,64,14,0.12),0_10px_18px_rgba(120,113,108,0.14)] transition hover:border-orange-300 hover:text-orange-700"
+                  href="https://www.google.com/maps/place/ABC+Work/%4028.9418556%2c-83.8118365%2c8z/data=%213m1%214b1%214m6%213m5%211s0x6c6f9b0c11527d19:0xf0f681309537ea30%218m2%213d28.94829%214d-82.492436%2116s/g/11v40zbby8?entry=ttu&g_ep=EgoyMDI2MDUxMC4wIKXMDSoASAFQAw%3D%3D"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Find Us on Google
+                </a>
+              </div>
             </div>
           </div>
 
@@ -444,22 +462,6 @@ export default function Home() {
         <div className="mx-auto flex max-w-6xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-lg font-black text-zinc-950">ABC Work</p>
           <p>Dumpster rentals, stump grinding, driveway grading, tractor work, rock and dirt delivery, and garden tilling.</p>
-          <a
-            className="inline-flex items-center gap-2 font-semibold text-zinc-700 transition hover:text-orange-600"
-            href="PASTE_FACEBOOK_URL_HERE"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <svg
-              aria-hidden="true"
-              className="h-4 w-4 flex-none"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.52 1.49-3.91 3.77-3.91 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.89h2.78l-.44 2.91h-2.34V22C18.34 21.24 22 17.08 22 12.06z" />
-            </svg>
-            Follow ABC Work on Facebook
-          </a>
           <p className="font-semibold text-zinc-950">Licensed and insured</p>
         </div>
       </footer>
