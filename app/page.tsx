@@ -94,7 +94,7 @@ export default function Home() {
           {[
             "/images/stump-grinder.jpg",
             "/images/481995667_606737238864423_2537526134187271_n.jpg",
-            "/images/448005019_430208936517255_3916163214568262560_n.jpg",
+            "/images/drivewaynext.jpg",
             "/images/571211473_795564596648352_6427307094381767261_n.jpg",
           ].map((src) => (
             <div className="relative min-h-0 flex-1 bg-zinc-900" key={src}>
@@ -109,7 +109,7 @@ export default function Home() {
           {[
             "/images/580140515_811754488362696_6753185236808792455_n.jpg",
             "/images/stump-before-after.jpg",
-            "/images/63546453.jpg",
+            "/images/stump2.jpg",
             "/images/575105195_803031602568318_982158897403736591_n.jpg",
           ].map((src) => (
             <div className="relative min-h-0 flex-1 bg-zinc-900" key={src}>
