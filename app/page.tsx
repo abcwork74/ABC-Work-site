@@ -226,48 +226,93 @@ export default function Home() {
             </h2>
           </div>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {services.map((service) => (
-              <div
-                className="rounded-xl border border-stone-200 bg-gradient-to-b from-white to-stone-50 p-5 shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_7px_0_rgba(146,64,14,0.18),0_22px_34px_rgba(120,113,108,0.2),0_5px_10px_rgba(120,113,108,0.15)] transition duration-150 ease-out hover:border-orange-300 hover:from-white hover:to-orange-50/40 hover:shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_7px_0_rgba(180,83,9,0.24),0_24px_38px_rgba(120,113,108,0.22),0_6px_12px_rgba(120,53,15,0.16)] active:translate-y-[3px] max-sm:border-stone-100 max-sm:p-6"
-                key={service.name}
-              >
-                {service.name === "Dumpster Rentals" ? (
-                  <Image
-                    alt="ABC Work dumpster rental service"
-                    className="mb-5 h-auto max-w-full rounded-md"
-                    height={1004}
-                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                    src="/images/481995667_606737238864423_2537526134187271_n.jpg"
-                    width={2048}
-                  />
-                ) : null}
-                {service.name === "Stump Grinding" ? (
-                  <Image
-                    alt="ABC Work stump grinding service"
-                    className="mb-5 h-auto max-w-full rounded-md"
-                    height={574}
-                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                    src="/images/stump-grinder.jpg"
-                    width={831}
-                  />
-                ) : null}
-                {service.name === "Rock & Dirt Delivery" ? (
-                  <Image
-                    alt="ABC Work rock and dirt delivery"
-                    className="mb-5 h-auto max-w-full rounded-md"
-                    height={1210}
-                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                    src="/images/480807077_608529052018575_8891667848226676131_n.jpg"
-                    width={2048}
-                  />
-                ) : null}
-                <div className="mb-5 h-1.5 w-12 rounded-full bg-orange-500" />
-                <h3 className="text-lg font-black max-sm:text-xl">{service.name}</h3>
-                <p className="mt-3 text-sm leading-6 text-zinc-600 max-sm:text-base max-sm:leading-7">
-                  {service.detail}
-                </p>
-              </div>
-            ))}
+            {services.map((service) => {
+              const serviceCard =
+                service.name === "Driveway Grading"
+                  ? {
+                      ...service,
+                      name: "Driveway Grading & Garden Tilling",
+                    }
+                  : service.name === "Garden Tilling"
+                    ? {
+                        ...service,
+                        name: "Debris Clearing",
+                      }
+                    : service;
+
+              return (
+                <div
+                  className="rounded-xl border border-stone-200 bg-gradient-to-b from-white to-stone-50 p-5 shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_7px_0_rgba(146,64,14,0.18),0_22px_34px_rgba(120,113,108,0.2),0_5px_10px_rgba(120,113,108,0.15)] transition duration-150 ease-out hover:border-orange-300 hover:from-white hover:to-orange-50/40 hover:shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_7px_0_rgba(180,83,9,0.24),0_24px_38px_rgba(120,113,108,0.22),0_6px_12px_rgba(120,53,15,0.16)] active:translate-y-[3px] max-sm:border-stone-100 max-sm:p-6"
+                  key={serviceCard.name}
+                >
+                  {serviceCard.name === "Dumpster Rentals" ? (
+                    <Image
+                      alt="ABC Work dumpster rental service"
+                      className="mb-5 h-auto max-w-full rounded-md"
+                      height={1004}
+                      sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                      src="/images/481995667_606737238864423_2537526134187271_n.jpg"
+                      width={2048}
+                    />
+                  ) : null}
+                  {serviceCard.name === "Stump Grinding" ? (
+                    <Image
+                      alt="ABC Work stump grinding service"
+                      className="mb-5 h-auto max-w-full rounded-md"
+                      height={574}
+                      sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                      src="/images/stump-grinder.jpg"
+                      width={831}
+                    />
+                  ) : null}
+                  {serviceCard.name === "Rock & Dirt Delivery" ? (
+                    <Image
+                      alt="ABC Work rock and dirt delivery"
+                      className="mb-5 h-auto max-w-full rounded-md"
+                      height={1210}
+                      sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                      src="/images/480807077_608529052018575_8891667848226676131_n.jpg"
+                      width={2048}
+                    />
+                  ) : null}
+                  {serviceCard.name === "Driveway Grading & Garden Tilling" ? (
+                    <Image
+                      alt="ABC Work driveway grading and garden tilling"
+                      className="mb-5 h-auto max-w-full rounded-md"
+                      height={600}
+                      sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                      src="/images/driveway-2.jpeg"
+                      width={450}
+                    />
+                  ) : null}
+                  {serviceCard.name === "General Tractor Work" ? (
+                    <Image
+                      alt="ABC Work general tractor work"
+                      className="mb-5 h-auto max-w-full rounded-md"
+                      height={1448}
+                      sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                      src="/images/tractor-work-2.png"
+                      width={1086}
+                    />
+                  ) : null}
+                  {serviceCard.name === "Debris Clearing" ? (
+                    <Image
+                      alt="ABC Work debris clearing"
+                      className="mb-5 h-auto max-w-full rounded-md"
+                      height={450}
+                      sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                      src="/images/debris-2.jpeg"
+                      width={600}
+                    />
+                  ) : null}
+                  <div className="mb-5 h-1.5 w-12 rounded-full bg-orange-500" />
+                  <h3 className="text-lg font-black max-sm:text-xl">{serviceCard.name}</h3>
+                  <p className="mt-3 text-sm leading-6 text-zinc-600 max-sm:text-base max-sm:leading-7">
+                    {serviceCard.detail}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
