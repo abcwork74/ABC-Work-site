@@ -95,7 +95,6 @@ export default function Home() {
             "/images/stump-grinder.jpg",
             "/images/481995667_606737238864423_2537526134187271_n.jpg",
             "/images/drivewaynext.jpg",
-            "/images/571211473_795564596648352_6427307094381767261_n.jpg",
           ].map((src) => (
             <div className="relative min-h-0 flex-1 bg-zinc-900" key={src}>
               <Image alt="" className="object-cover" fill src={src} />
@@ -110,7 +109,6 @@ export default function Home() {
             "/images/580140515_811754488362696_6753185236808792455_n.jpg",
             "/images/stump-before-after.jpg",
             "/images/stump2.jpg",
-            "/images/575105195_803031602568318_982158897403736591_n.jpg",
           ].map((src) => (
             <div className="relative min-h-0 flex-1 bg-zinc-900" key={src}>
               <Image alt="" className="object-cover" fill src={src} />
@@ -192,26 +190,100 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid gap-4 pb-8 sm:grid-cols-1 lg:grid-cols-3 lg:pb-10">
-            <div className="rounded-xl border border-stone-200 bg-gradient-to-b from-white to-stone-50 p-5 shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_7px_0_rgba(146,64,14,0.18),0_22px_34px_rgba(120,113,108,0.2),0_5px_10px_rgba(120,113,108,0.15)]">
-              <p className="text-sm font-black text-zinc-950">Dumpster Rentals</p>
-              <p className="mt-2 text-sm leading-6 text-zinc-600">
-                For remodels, roofing projects, property work, and job sites.
+        </div>
+      </section>
+
+      <section id="quote" className="bg-stone-50 px-5 py-16 sm:px-8 lg:px-10">
+        <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[0.85fr_1.15fr]">
+          <div>
+            <p className="text-sm font-black uppercase tracking-[0.16em] text-orange-600">
+              Free quote
+            </p>
+            <h2 className="mt-3 text-3xl font-black tracking-tight">
+              Tell us what project you need help with.
+            </h2>
+            <p className="mt-5 leading-8 text-zinc-700">
+              Call for the fastest response, or send the basic details and ABC
+              Work will follow up about scheduling, pricing, and the right
+              equipment for the job.
+            </p>
+            <div className="mt-6 rounded-xl border border-stone-200 bg-gradient-to-b from-white to-stone-50 p-5 shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_7px_0_rgba(146,64,14,0.18),0_22px_34px_rgba(120,113,108,0.2),0_5px_10px_rgba(120,113,108,0.15)]">
+              <p className="font-black text-zinc-950">ABC Work</p>
+              <p className="mt-1 text-sm font-semibold text-zinc-600">
+                Licensed and insured
               </p>
-            </div>
-            <div className="rounded-xl border border-stone-200 bg-gradient-to-b from-white to-stone-50 p-5 shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_7px_0_rgba(146,64,14,0.18),0_22px_34px_rgba(120,113,108,0.2),0_5px_10px_rgba(120,113,108,0.15)]">
-              <p className="text-sm font-black text-zinc-950">Stump Grinding</p>
-              <p className="mt-2 text-sm leading-6 text-zinc-600">
-                Clear stumps cleanly so yards and access areas open back up.
-              </p>
-            </div>
-            <div className="rounded-xl border border-stone-200 bg-gradient-to-b from-white to-stone-50 p-5 shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_7px_0_rgba(146,64,14,0.18),0_22px_34px_rgba(120,113,108,0.2),0_5px_10px_rgba(120,113,108,0.15)]">
-              <p className="text-sm font-black text-zinc-950">Tractor Work</p>
-              <p className="mt-2 text-sm leading-6 text-zinc-600">
-                Driveway grading, garden tilling, rock and dirt delivery, and general tractor work.
-              </p>
+              <a className="mt-4 block text-lg font-black text-orange-600" href="tel:3524365635">
+                (352) 436-5635
+              </a>
+              <a className="mt-1 block font-semibold text-zinc-700" href="mailto:abcwork74@gmail.com">
+                abcwork74@gmail.com
+              </a>
+              <div className="mt-4 grid justify-items-center gap-2">
+                <a
+                  className="inline-flex w-4/5 items-center justify-center rounded-full border border-[#0f5fca] bg-[#1877F2] px-3.5 py-1 text-xs font-bold text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_2px_0_rgba(15,95,202,0.7),0_7px_14px_rgba(24,119,242,0.2)] transition hover:bg-[#166fe5] sm:w-1/2"
+                  href="https://www.facebook.com/people/ABC-WORK/100085844552651/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Follow ABC Work on Facebook
+                </a>
+                <a
+                  className="inline-flex w-4/5 items-center justify-center rounded-full border border-stone-300 bg-gradient-to-b from-white to-stone-50 px-3.5 py-1 text-xs font-bold text-zinc-800 shadow-[inset_0_1px_0_rgba(255,255,255,0.95),0_2px_0_rgba(146,64,14,0.1),0_7px_14px_rgba(120,113,108,0.12)] transition hover:border-orange-300 hover:text-orange-700 sm:w-1/2"
+                  href="https://www.google.com/maps/place/ABC+Work/%4028.9418556%2c-83.8118365%2c8z/data=%213m1%214b1%214m6%213m5%211s0x6c6f9b0c11527d19:0xf0f681309537ea30%218m2%213d28.94829%214d-82.492436%2116s/g/11v40zbby8?entry=ttu&g_ep=EgoyMDI2MDUxMC4wIKXMDSoASAFQAw%3D%3D"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Find Us on Google
+                </a>
+              </div>
             </div>
           </div>
+
+          <form
+            className="grid gap-4 rounded-xl border border-stone-200 bg-gradient-to-b from-white to-stone-50 p-5 shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_7px_0_rgba(146,64,14,0.18),0_24px_38px_rgba(120,113,108,0.22),0_5px_10px_rgba(120,113,108,0.15)] sm:p-6"
+            onSubmit={handleQuoteSubmit}
+          >
+            <div className="grid gap-4 sm:grid-cols-2">
+              <label className="grid gap-2 text-sm font-bold text-zinc-800">
+                Name
+                <input className="min-h-12 rounded-md border border-zinc-300 bg-white px-4 font-normal outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-100" name="name" required />
+              </label>
+              <label className="grid gap-2 text-sm font-bold text-zinc-800">
+                Phone
+                <input className="min-h-12 rounded-md border border-zinc-300 bg-white px-4 font-normal outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-100" name="phone" required />
+              </label>
+            </div>
+            <label className="grid gap-2 text-sm font-bold text-zinc-800">
+              Service needed
+              <input
+                className="min-h-12 rounded-md border border-zinc-300 bg-white px-4 font-normal outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-100"
+                name="service"
+                placeholder="Dumpster rental, stump grinding, grading, or tractor work"
+                required
+              />
+            </label>
+            <label className="grid gap-2 text-sm font-bold text-zinc-800">
+              Project details
+              <textarea className="min-h-32 rounded-md border border-zinc-300 bg-white px-4 py-3 font-normal outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-100" name="details" required />
+            </label>
+            {quoteStatus === "sent" ? (
+              <p className="font-semibold text-green-700">
+                Thanks — your quote request has been sent.
+              </p>
+            ) : null}
+            {quoteStatus === "error" ? (
+              <p className="font-semibold text-red-700">
+                Something went wrong. Please call or try again.
+              </p>
+            ) : null}
+            <button
+              className="min-h-14 rounded-lg border border-[#c94f0b]/80 bg-gradient-to-b from-[#f47c20] to-[#dd5f0b] px-6 text-base font-black text-zinc-950 shadow-[inset_0_1px_0_rgba(255,255,255,0.42),0_4px_0_rgba(171,63,10,0.72),0_13px_24px_rgba(39,39,42,0.17),0_3px_7px_rgba(63,63,70,0.13)] transition duration-150 ease-out hover:from-[#ff8a2a] hover:to-[#dd5f0b] active:translate-y-[3px] active:shadow-[inset_0_1px_0_rgba(255,255,255,0.26),0_1px_0_rgba(171,63,10,0.58),0_6px_12px_rgba(39,39,42,0.14)]"
+              disabled={quoteStatus === "sending"}
+              type="submit"
+            >
+              {quoteStatus === "sending" ? "Sending..." : "Request a Free Quote"}
+            </button>
+          </form>
         </div>
       </section>
 
@@ -376,100 +448,6 @@ export default function Home() {
               </span>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section id="quote" className="bg-stone-50 px-5 py-16 sm:px-8 lg:px-10">
-        <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[0.85fr_1.15fr]">
-          <div>
-            <p className="text-sm font-black uppercase tracking-[0.16em] text-orange-600">
-              Free quote
-            </p>
-            <h2 className="mt-3 text-3xl font-black tracking-tight">
-              Tell us what project you need help with.
-            </h2>
-            <p className="mt-5 leading-8 text-zinc-700">
-              Call for the fastest response, or send the basic details and ABC
-              Work will follow up about scheduling, pricing, and the right
-              equipment for the job.
-            </p>
-            <div className="mt-6 rounded-xl border border-stone-200 bg-gradient-to-b from-white to-stone-50 p-5 shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_7px_0_rgba(146,64,14,0.18),0_22px_34px_rgba(120,113,108,0.2),0_5px_10px_rgba(120,113,108,0.15)]">
-              <p className="font-black text-zinc-950">ABC Work</p>
-              <p className="mt-1 text-sm font-semibold text-zinc-600">
-                Licensed and insured
-              </p>
-              <a className="mt-4 block text-lg font-black text-orange-600" href="tel:3524365635">
-                (352) 436-5635
-              </a>
-              <a className="mt-1 block font-semibold text-zinc-700" href="mailto:abcwork74@gmail.com">
-                abcwork74@gmail.com
-              </a>
-              <div className="mt-4 grid justify-items-center gap-2">
-                <a
-                  className="inline-flex w-4/5 items-center justify-center rounded-full border border-[#0f5fca] bg-[#1877F2] px-3.5 py-1 text-xs font-bold text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_2px_0_rgba(15,95,202,0.7),0_7px_14px_rgba(24,119,242,0.2)] transition hover:bg-[#166fe5] sm:w-1/2"
-                  href="https://www.facebook.com/people/ABC-WORK/100085844552651/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Follow ABC Work on Facebook
-                </a>
-                <a
-                  className="inline-flex w-4/5 items-center justify-center rounded-full border border-stone-300 bg-gradient-to-b from-white to-stone-50 px-3.5 py-1 text-xs font-bold text-zinc-800 shadow-[inset_0_1px_0_rgba(255,255,255,0.95),0_2px_0_rgba(146,64,14,0.1),0_7px_14px_rgba(120,113,108,0.12)] transition hover:border-orange-300 hover:text-orange-700 sm:w-1/2"
-                  href="https://www.google.com/maps/place/ABC+Work/%4028.9418556%2c-83.8118365%2c8z/data=%213m1%214b1%214m6%213m5%211s0x6c6f9b0c11527d19:0xf0f681309537ea30%218m2%213d28.94829%214d-82.492436%2116s/g/11v40zbby8?entry=ttu&g_ep=EgoyMDI2MDUxMC4wIKXMDSoASAFQAw%3D%3D"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Find Us on Google
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <form
-            className="grid gap-4 rounded-xl border border-stone-200 bg-gradient-to-b from-white to-stone-50 p-5 shadow-[inset_0_2px_0_rgba(255,255,255,0.98),0_7px_0_rgba(146,64,14,0.18),0_24px_38px_rgba(120,113,108,0.22),0_5px_10px_rgba(120,113,108,0.15)] sm:p-6"
-            onSubmit={handleQuoteSubmit}
-          >
-            <div className="grid gap-4 sm:grid-cols-2">
-              <label className="grid gap-2 text-sm font-bold text-zinc-800">
-                Name
-                <input className="min-h-12 rounded-md border border-zinc-300 bg-white px-4 font-normal outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-100" name="name" required />
-              </label>
-              <label className="grid gap-2 text-sm font-bold text-zinc-800">
-                Phone
-                <input className="min-h-12 rounded-md border border-zinc-300 bg-white px-4 font-normal outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-100" name="phone" required />
-              </label>
-            </div>
-            <label className="grid gap-2 text-sm font-bold text-zinc-800">
-              Service needed
-              <input
-                className="min-h-12 rounded-md border border-zinc-300 bg-white px-4 font-normal outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-100"
-                name="service"
-                placeholder="Dumpster rental, stump grinding, grading, or tractor work"
-                required
-              />
-            </label>
-            <label className="grid gap-2 text-sm font-bold text-zinc-800">
-              Project details
-              <textarea className="min-h-32 rounded-md border border-zinc-300 bg-white px-4 py-3 font-normal outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-100" name="details" required />
-            </label>
-            {quoteStatus === "sent" ? (
-              <p className="font-semibold text-green-700">
-                Thanks — your quote request has been sent.
-              </p>
-            ) : null}
-            {quoteStatus === "error" ? (
-              <p className="font-semibold text-red-700">
-                Something went wrong. Please call or try again.
-              </p>
-            ) : null}
-            <button
-              className="min-h-14 rounded-lg border border-[#c94f0b]/80 bg-gradient-to-b from-[#f47c20] to-[#dd5f0b] px-6 text-base font-black text-zinc-950 shadow-[inset_0_1px_0_rgba(255,255,255,0.42),0_4px_0_rgba(171,63,10,0.72),0_13px_24px_rgba(39,39,42,0.17),0_3px_7px_rgba(63,63,70,0.13)] transition duration-150 ease-out hover:from-[#ff8a2a] hover:to-[#dd5f0b] active:translate-y-[3px] active:shadow-[inset_0_1px_0_rgba(255,255,255,0.26),0_1px_0_rgba(171,63,10,0.58),0_6px_12px_rgba(39,39,42,0.14)]"
-              disabled={quoteStatus === "sending"}
-              type="submit"
-            >
-              {quoteStatus === "sending" ? "Sending..." : "Request a Free Quote"}
-            </button>
-          </form>
         </div>
       </section>
 
